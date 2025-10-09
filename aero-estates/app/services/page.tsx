@@ -47,7 +47,7 @@ export default function ServicesPage() {
                   className="group block"
                 >
                   <div className={`py-12 border-t border-foreground/5 hover:bg-foreground/[0.02] transition-all duration-200 ${index === SERVICES.length - 1 ? 'border-b' : ''}`}>
-                    <div className="grid lg:grid-cols-12 gap-8">
+                    <div className="grid lg:grid-cols-12 gap-8 items-start">
                       {/* Left: Icon and Title */}
                       <div className="lg:col-span-4 space-y-4">
                         <div className="w-14 h-14 rounded-full bg-foreground/5 flex items-center justify-center">
@@ -78,8 +78,10 @@ export default function ServicesPage() {
                       </div>
 
                       {/* Right: Arrow */}
-                      <div className="lg:col-span-1 flex justify-end items-start pt-2">
-                        <ArrowRight className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                      <div className="lg:col-span-1 flex justify-end">
+                        <div className="w-14 h-14 flex items-center justify-center">
+                          <ArrowRight className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                        </div>
                       </div>
                     </div>
                   </div>

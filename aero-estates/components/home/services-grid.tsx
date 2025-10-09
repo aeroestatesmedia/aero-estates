@@ -48,28 +48,26 @@ export function ServicesGrid() {
               <motion.div key={service.id} variants={staggerItem}>
                 <Link href={`/services/${service.slug}`} className="group block">
                   <div className={`py-8 border-t border-foreground/5 hover:bg-foreground/[0.02] transition-all duration-200 ${index === SERVICES.length - 1 ? 'border-b' : ''}`}>
-                    <div className="grid lg:grid-cols-12 gap-6 items-start">
+                    <div className="flex items-center gap-6">
                       {/* Icon and title */}
-                      <div className="lg:col-span-5 flex items-start gap-4">
+                      <div className="flex items-center gap-4 flex-1 lg:flex-[0_0_41.666%]">
                         <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center flex-shrink-0">
                           <Icon className="w-6 h-6 text-foreground" />
                         </div>
-                        <div>
-                          <h3 className="text-xl font-semibold tracking-tight mb-1">
-                            {service.name}
-                          </h3>
-                        </div>
+                        <h3 className="text-xl font-semibold tracking-tight">
+                          {service.name}
+                        </h3>
                       </div>
 
                       {/* Description */}
-                      <div className="lg:col-span-6 lg:pl-4">
+                      <div className="hidden lg:block flex-1 lg:flex-[0_0_50%]">
                         <p className="text-muted-foreground font-light leading-relaxed">
                           {service.brief}
                         </p>
                       </div>
 
                       {/* Arrow */}
-                      <div className="lg:col-span-1 flex justify-end items-center">
+                      <div className="flex items-center justify-end lg:flex-[0_0_8.333%]">
                         <ArrowRight className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                       </div>
                     </div>

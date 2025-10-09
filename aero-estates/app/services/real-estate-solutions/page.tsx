@@ -3,11 +3,45 @@ import Link from 'next/link';
 import { Building2, TrendingUp, FileSearch, Home, Briefcase, MapPin, DollarSign, ClipboardCheck } from 'lucide-react';
 import { ServiceHero } from '@/components/services/service-hero';
 import { Button } from '@/components/ui/button';
+import { PropertyCarousel } from '@/components/services/property-carousel';
 
 export const metadata: Metadata = {
   title: 'Real Estate Solutions',
   description: 'Expert property consulting, market analysis, and investment strategy services for commercial and residential real estate development.',
 };
+
+const propertySlides = [
+  {
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop',
+    title: 'Commercial Development Projects',
+    category: 'Commercial',
+    description: 'Strategic consulting for office, retail, and mixed-use developments',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070&auto=format&fit=crop',
+    title: 'Residential Investment Opportunities',
+    category: 'Residential',
+    description: 'Portfolio management and acquisition strategy for residential properties',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2070&auto=format&fit=crop',
+    title: 'Industrial & Logistics Assets',
+    category: 'Industrial',
+    description: 'Specialized advisory for warehouse and logistics property investments',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
+    title: 'Luxury Property Consulting',
+    category: 'Luxury',
+    description: 'High-end residential consulting and market analysis',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2073&auto=format&fit=crop',
+    title: 'Urban Regeneration Projects',
+    category: 'Development',
+    description: 'Comprehensive planning and execution for urban renewal initiatives',
+  },
+];
 
 const offerings = [
   {
@@ -121,8 +155,23 @@ export default function RealEstateSolutionsPage() {
         </div>
       </section>
 
-      {/* Offerings List */}
+      {/* Property Showcase Carousel */}
       <section className="py-20 lg:py-28 bg-background">
+        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
+              Property Sectors We Serve
+            </h2>
+            <p className="text-base text-muted-foreground font-light leading-relaxed max-w-3xl">
+              From commercial developments to residential investments, we provide specialized expertise across all major property sectors.
+            </p>
+          </div>
+          <PropertyCarousel slides={propertySlides} />
+        </div>
+      </section>
+
+      {/* Offerings List */}
+      <section className="py-20 lg:py-28 bg-foreground/[0.015]">
         <div className="container mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
