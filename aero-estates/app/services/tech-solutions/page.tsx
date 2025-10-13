@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Network, Cloud, Server, Shield, Layers, GitBranch } from 'lucide-react';
 import { ServiceHero } from '@/components/services/service-hero';
 import { Button } from '@/components/ui/button';
+import { InteractiveIcon } from '@/components/ui/interactive-icon';
 
 export const metadata: Metadata = {
   title: 'Tech Solutions Services',
@@ -89,9 +90,7 @@ export default function TechnologyArchitecturePage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <Layers className="w-6 h-6 text-foreground" />
-              </div>
+              <InteractiveIcon Icon={Layers} size="sm" />
               <h3 className="text-xl font-semibold tracking-tight">Scalable by Design</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 Every architecture we design is built to scale, supporting growth from initial launch through enterprise expansion. We apply proven patterns and best practices to create systems that handle increasing load, users, and complexity without requiring fundamental rebuilds.
@@ -99,9 +98,7 @@ export default function TechnologyArchitecturePage() {
             </div>
 
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <Shield className="w-6 h-6 text-foreground" />
-              </div>
+              <InteractiveIcon Icon={Shield} size="sm" />
               <h3 className="text-xl font-semibold tracking-tight">Security First Approach</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 Security is embedded throughout our architecture process, not added as an afterthought. We implement defense-in-depth strategies, zero-trust principles, and compliance frameworks that protect your systems, data, and customers while enabling business agility.
@@ -109,9 +106,7 @@ export default function TechnologyArchitecturePage() {
             </div>
 
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <Cloud className="w-6 h-6 text-foreground" />
-              </div>
+              <InteractiveIcon Icon={Cloud} size="sm" />
               <h3 className="text-xl font-semibold tracking-tight">Cloud-Native Expertise</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 Leverage our deep expertise across AWS, Azure, and Google Cloud to build optimised cloud solutions. We design architectures that take full advantage of cloud-native services, delivering improved performance, reduced costs, and accelerated innovation.
@@ -140,9 +135,7 @@ export default function TechnologyArchitecturePage() {
                 <div key={index} className={`py-10 border-t border-foreground/5 ${index === offerings.length - 1 ? 'border-b' : ''}`}>
                   <div className="grid lg:grid-cols-12 gap-6">
                     <div className="lg:col-span-4 flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-6 h-6 text-foreground" />
-                      </div>
+                      <InteractiveIcon Icon={Icon} size="sm" className="flex-shrink-0" />
                       <h3 className="text-xl font-semibold tracking-tight pt-2">{offering.title}</h3>
                     </div>
                     <div className="lg:col-span-8">

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { TrendingUp, Target, Users, BarChart, Palette, Code } from 'lucide-react';
 import { ServiceHero } from '@/components/services/service-hero';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { InteractiveIcon } from '@/components/ui/interactive-icon';
 
 export const metadata: Metadata = {
   title: 'Brand Scaling Services',
@@ -90,9 +90,7 @@ export default function DigitalMarketingPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <BarChart className="w-6 h-6 text-foreground" />
-              </div>
+              <InteractiveIcon Icon={BarChart} size="sm" />
               <h3 className="text-xl font-semibold tracking-tight">Data-Driven Approach</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 Every decision we make is backed by data and analytics. We continuously monitor performance metrics, conduct A/B testing, and refine strategies to ensure optimal ROI and sustainable growth.
@@ -100,9 +98,7 @@ export default function DigitalMarketingPage() {
             </div>
 
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <Users className="w-6 h-6 text-foreground" />
-              </div>
+              <InteractiveIcon Icon={Users} size="sm" />
               <h3 className="text-xl font-semibold tracking-tight">Audience-First Methodology</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 We invest time understanding your target audience—their behaviours, preferences, and pain points—to create campaigns that truly resonate and drive meaningful engagement.
@@ -110,9 +106,7 @@ export default function DigitalMarketingPage() {
             </div>
 
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-foreground" />
-              </div>
+              <InteractiveIcon Icon={TrendingUp} size="sm" />
               <h3 className="text-xl font-semibold tracking-tight">Transparent Reporting</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 Receive clear, comprehensive reports that demonstrate the impact of your marketing investment. We believe in complete transparency with regular updates on campaign performance and strategic recommendations.
@@ -141,9 +135,7 @@ export default function DigitalMarketingPage() {
                 <div key={index} className={`py-10 border-t border-foreground/5 ${index === offerings.length - 1 ? 'border-b' : ''}`}>
                   <div className="grid lg:grid-cols-12 gap-6">
                     <div className="lg:col-span-4 flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-6 h-6 text-foreground" />
-                      </div>
+                      <InteractiveIcon Icon={Icon} size="sm" className="flex-shrink-0" />
                       <h3 className="text-xl font-semibold tracking-tight pt-2">{offering.title}</h3>
                     </div>
                     <div className="lg:col-span-8">

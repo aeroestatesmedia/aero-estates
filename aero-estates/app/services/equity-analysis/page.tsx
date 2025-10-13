@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { LineChart, TrendingUp, FileText, Calculator, PieChart, Target, BarChart3, CircleDollarSign } from 'lucide-react';
 import { ServiceHero } from '@/components/services/service-hero';
 import { Button } from '@/components/ui/button';
+import { InteractiveIcon } from '@/components/ui/interactive-icon';
 
 export const metadata: Metadata = {
   title: 'Equity Analysis Services',
@@ -89,9 +90,7 @@ export default function EquityAnalysisPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <BarChart3 className="w-6 h-6 text-foreground" />
-              </div>
+              <InteractiveIcon Icon={BarChart3} size="sm" />
               <h3 className="text-xl font-semibold tracking-tight">Rigorous Methodology</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 Our analysis follows established financial standards and best practices, ensuring credibility and reliability. We use sophisticated modelling techniques while maintaining transparency in our assumptions and methodologies.
@@ -99,9 +98,7 @@ export default function EquityAnalysisPage() {
             </div>
 
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <Target className="w-6 h-6 text-foreground" />
-              </div>
+              <InteractiveIcon Icon={Target} size="sm" />
               <h3 className="text-xl font-semibold tracking-tight">Actionable Insights</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 We don't just deliver data—we provide clear, actionable recommendations that directly support your business objectives. Our reports translate complex financial analysis into strategic insights you can act on.
@@ -109,9 +106,7 @@ export default function EquityAnalysisPage() {
             </div>
 
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-foreground" />
-              </div>
+              <InteractiveIcon Icon={TrendingUp} size="sm" />
               <h3 className="text-xl font-semibold tracking-tight">Industry Expertise</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 Our team combines financial analysis skills with deep sector knowledge, enabling us to contextualise findings within industry dynamics and competitive realities that matter to your business.
@@ -140,9 +135,7 @@ export default function EquityAnalysisPage() {
                 <div key={index} className={`py-10 border-t border-foreground/5 ${index === offerings.length - 1 ? 'border-b' : ''}`}>
                   <div className="grid lg:grid-cols-12 gap-6">
                     <div className="lg:col-span-4 flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-6 h-6 text-foreground" />
-                      </div>
+                      <InteractiveIcon Icon={Icon} size="sm" className="flex-shrink-0" />
                       <h3 className="text-xl font-semibold tracking-tight pt-2">{offering.title}</h3>
                     </div>
                     <div className="lg:col-span-8">

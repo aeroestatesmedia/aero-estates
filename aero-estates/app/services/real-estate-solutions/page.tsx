@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Building2, TrendingUp, FileSearch, Home, Briefcase, MapPin, DollarSign, ClipboardCheck } from 'lucide-react';
+import { Building2, TrendingUp, FileSearch, Briefcase, MapPin, DollarSign, ClipboardCheck } from 'lucide-react';
 import { ServiceHero } from '@/components/services/service-hero';
 import { Button } from '@/components/ui/button';
 import { PropertyCarousel } from '@/components/services/property-carousel';
+import { InteractiveIcon } from '@/components/ui/interactive-icon';
 
 export const metadata: Metadata = {
   title: 'Real Estate Solutions',
@@ -123,9 +124,7 @@ export default function RealEstateSolutionsPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-foreground" />
-              </div>
+              <InteractiveIcon Icon={TrendingUp} size="sm" />
               <h3 className="text-xl font-semibold tracking-tight">Market Intelligence</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 Access deep market insights based on comprehensive data analysis, local expertise, and industry relationships. We track market trends, transaction activity, and emerging opportunities to keep clients informed and positioned for success.
@@ -133,9 +132,7 @@ export default function RealEstateSolutionsPage() {
             </div>
 
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <FileSearch className="w-6 h-6 text-foreground" />
-              </div>
+              <InteractiveIcon Icon={FileSearch} size="sm" />
               <h3 className="text-xl font-semibold tracking-tight">Rigorous Analysis</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 Every recommendation is supported by thorough financial modelling, market research, and risk assessment. We apply institutional-quality analysis to evaluate opportunities and support confident decision-making.
@@ -143,9 +140,7 @@ export default function RealEstateSolutionsPage() {
             </div>
 
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <Briefcase className="w-6 h-6 text-foreground" />
-              </div>
+              <InteractiveIcon Icon={Briefcase} size="sm" />
               <h3 className="text-xl font-semibold tracking-tight">End-to-End Support</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 From initial strategy development through transaction execution and ongoing asset management, we provide comprehensive support throughout the property lifecycle. Our team becomes your trusted advisor for all real estate decisions.
@@ -189,9 +184,7 @@ export default function RealEstateSolutionsPage() {
                 <div key={index} className={`py-10 border-t border-foreground/5 ${index === offerings.length - 1 ? 'border-b' : ''}`}>
                   <div className="grid lg:grid-cols-12 gap-6">
                     <div className="lg:col-span-4 flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-6 h-6 text-foreground" />
-                      </div>
+                      <InteractiveIcon Icon={Icon} size="sm" className="flex-shrink-0" />
                       <h3 className="text-xl font-semibold tracking-tight pt-2">{offering.title}</h3>
                     </div>
                     <div className="lg:col-span-8">
