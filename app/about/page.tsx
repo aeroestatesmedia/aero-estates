@@ -134,9 +134,9 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
                 <Briefcase className="w-6 h-6 text-foreground" />
               </div>
-              <h3 className="text-xl font-semibold tracking-tight">Remote-First, Flexible Working</h3>
+              <h3 className="text-xl font-semibold tracking-tight">Hybrid Working Model</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                We embrace modern work practices with a remote-first approach, supported by WeWork access for flexibility when needed. This allows us to attract top talent and maintain work-life balance.
+                We embrace modern work practices with a hybrid approach, combining the flexibility of remote work with in-person collaboration when needed. This allows us to attract top talent and maintain work-life balance while fostering strong team connections.
               </p>
             </div>
 
@@ -184,11 +184,11 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Based in Dublin</h2>
             </div>
             <p className="text-base text-muted-foreground font-light leading-relaxed">
-              Proudly serving clients from our base in {COMPANY_INFO.location}. Our remote-first approach means we can work with clients across Ireland and beyond, with WeWork access providing flexibility for in-person meetings when needed.
+              Proudly serving clients from our base in {COMPANY_INFO.location}. Our hybrid approach means we can work with clients across Ireland and beyond, with flexible working arrangements providing opportunities for both in-person meetings and remote collaboration when needed.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Badge variant="outline" className="border-foreground/10 text-xs font-normal">Remote-First Operations</Badge>
-              <Badge variant="outline" className="border-foreground/10 text-xs font-normal">WeWork Access Available</Badge>
+              <Badge variant="outline" className="border-foreground/10 text-xs font-normal">Hybrid Operations</Badge>
+              <Badge variant="outline" className="border-foreground/10 text-xs font-normal">Flexible Working Available</Badge>
               <Badge variant="outline" className="border-foreground/10 text-xs font-normal">Serving Ireland & Beyond</Badge>
             </div>
           </div>

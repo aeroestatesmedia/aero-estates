@@ -78,7 +78,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold mb-1 text-sm">Office Model</h3>
                       <p className="text-muted-foreground text-sm">
-                        Remote-first with WeWork access for flexibility
+                        Hybrid working with flexible arrangements
                       </p>
                     </div>
                   </div>

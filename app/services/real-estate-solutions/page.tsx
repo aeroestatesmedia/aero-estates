@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Building2, TrendingUp, FileSearch, Briefcase, MapPin, DollarSign, ClipboardCheck } from 'lucide-react';
+import { Building2, Camera, Image as ImageIcon, Video, FileText, Target, Palette } from 'lucide-react';
 import { ServiceHero } from '@/components/services/service-hero';
 import { Button } from '@/components/ui/button';
 import { PropertyCarousel } from '@/components/services/property-carousel';
@@ -8,72 +8,72 @@ import { InteractiveIcon } from '@/components/ui/interactive-icon';
 
 export const metadata: Metadata = {
   title: 'Real Estate Solutions',
-  description: 'Expert property consulting, market analysis, and investment strategy services for commercial and residential real estate development.',
+  description: 'Professional drone videography, immersive virtual tours, and compelling marketing materials that showcase properties in their best light.',
 };
 
 const propertySlides = [
   {
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop',
-    title: 'Commercial Development Projects',
-    category: 'Commercial',
-    description: 'Strategic consulting for office, retail, and mixed-use developments',
+    title: 'Aerial Drone Videography',
+    category: 'Video',
+    description: 'Stunning cinematic footage showcasing properties from breathtaking perspectives',
   },
   {
     image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070&auto=format&fit=crop',
-    title: 'Residential Investment Opportunities',
-    category: 'Residential',
-    description: 'Portfolio management and acquisition strategy for residential properties',
+    title: 'Virtual Property Tours',
+    category: 'Virtual Tours',
+    description: 'Immersive 360-degree tours that let buyers explore properties remotely',
   },
   {
     image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2070&auto=format&fit=crop',
-    title: 'Industrial & Logistics Assets',
-    category: 'Industrial',
-    description: 'Specialized advisory for warehouse and logistics property investments',
+    title: 'Professional Photography',
+    category: 'Photography',
+    description: 'High-definition aerial and ground photography that captures every detail',
   },
   {
     image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
-    title: 'Luxury Property Consulting',
-    category: 'Luxury',
-    description: 'High-end residential consulting and market analysis',
+    title: 'Marketing Materials',
+    category: 'Marketing',
+    description: 'Compelling brochures and advertisements designed to attract buyers',
   },
   {
     image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2073&auto=format&fit=crop',
-    title: 'Urban Regeneration Projects',
-    category: 'Development',
-    description: 'Comprehensive planning and execution for urban renewal initiatives',
+    title: 'Property Staging',
+    category: 'Staging',
+    description: 'Expert consultation to present your property at its absolute best',
   },
 ];
 
 const offerings = [
   {
-    icon: TrendingUp,
-    title: 'Property Development Consulting',
-    description: 'Comprehensive development advisory services from concept to completion, including project feasibility analysis, development strategy, planning coordination, and construction oversight. We guide developers through complex projects while managing risk and maximising returns on investment.',
+    icon: Video,
+    title: 'Professional Drone Videography',
+    description: 'Capture stunning aerial footage that showcases your property\'s location, surroundings, and unique features from breathtaking perspectives. Our certified drone operators use professional-grade equipment to create cinematic videos that highlight proximity to amenities, transport links, schools, and natural features while demonstrating the property\'s position within its neighbourhood context.',
   },
   {
-    icon: FileSearch,
-    title: 'Market Analysis & Research',
-    description: 'In-depth market intelligence covering supply and demand dynamics, pricing trends, demographic analysis, and competitive positioning. Our research provides the data-driven insights needed to identify opportunities, assess market viability, and make informed property decisions.',
+    icon: ImageIcon,
+    title: 'High-Definition Aerial Photography',
+    description: 'Professional aerial photography that provides unique perspectives impossible to achieve from ground level. These high-resolution images are perfect for brochures, online listings, and social media marketing, showing the property\'s relationship to its surroundings, garden layouts, and architectural features from compelling overhead angles.',
   },
   {
-    icon: Briefcase,
-    title: 'Investment Strategy & Portfolio Management',
-    description: 'Strategic advisory services for property investors, including portfolio optimisation, acquisition strategy, asset allocation, and performance monitoring. We help investors build diversified portfolios that align with risk tolerance and return objectives while capitalising on market opportunities.',
+    icon: Camera,
+    title: 'Immersive Virtual Tours',
+    description: 'Create engaging 360-degree virtual tours that allow potential buyers to explore properties remotely at their own pace. Our virtual tours provide an interactive experience that helps buyers develop emotional connections with properties, reducing unnecessary viewings while attracting more serious, qualified prospects.',
   },
   {
-    icon: DollarSign,
-    title: 'Property Valuation & Appraisal',
-    description: 'Professional property valuations using industry-standard methodologies including income capitalisation, comparable sales analysis, and cost approach. Our valuations support acquisition decisions, financing requirements, portfolio reporting, tax planning, and dispute resolution with defensible, well-documented analysis.',
+    icon: FileText,
+    title: 'Professional Property Marketing Brochures',
+    description: 'Design and produce high-quality marketing brochures that combine stunning photography with compelling property descriptions and key selling points. Our brochures are professionally designed to create lasting impressions and provide potential buyers with comprehensive information in an elegant, memorable format.',
   },
   {
-    icon: MapPin,
-    title: 'Site Selection & Feasibility Studies',
-    description: 'Comprehensive site evaluation services assessing location suitability, zoning and planning considerations, infrastructure requirements, environmental factors, and development potential. We conduct detailed feasibility studies that analyse financial viability, market demand, and risk factors for proposed projects.',
+    icon: Target,
+    title: 'Targeted Property Advertisements',
+    description: 'Develop compelling advertising campaigns for digital and print media, including social media ads, online property portals, and local publications. We create targeted campaigns that reach the right buyers with messages and visuals specifically designed to generate interest and drive inquiries.',
   },
   {
-    icon: ClipboardCheck,
-    title: 'Due Diligence & Transaction Support',
-    description: 'Thorough due diligence services for property acquisitions, including title review, lease analysis, physical condition assessments, environmental investigations, and financial verification. We provide transaction support through negotiation, documentation review, and closing coordination to ensure smooth, risk-mitigated property transactions.',
+    icon: Palette,
+    title: 'Property Staging Consultation',
+    description: 'Professional advice on presenting your property to maximise appeal and value. Our staging consultation identifies opportunities to enhance the property\'s presentation, from furniture arrangement and décor suggestions to minor improvements that can significantly impact buyer perception and offers.',
   },
 ];
 
@@ -82,7 +82,7 @@ export default function RealEstateSolutionsPage() {
     <div>
       <ServiceHero
         title="Real Estate Solutions"
-        description="Unlock property potential with expert real estate consulting and investment strategy"
+        description="Elevating your property's presence to attract buyers"
         Icon={Building2}
       />
 
@@ -92,18 +92,18 @@ export default function RealEstateSolutionsPage() {
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
             <div className="lg:col-span-5">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
-                Strategic Real Estate Advisory for Property Success
+                Professional Property Marketing Solutions
               </h2>
             </div>
             <div className="lg:col-span-7 space-y-6 text-base text-muted-foreground font-light leading-relaxed">
               <p>
-                In today's dynamic property market, successful real estate investment and development requires sophisticated analysis, market expertise, and strategic planning. Our real estate solutions provide comprehensive advisory services that help clients navigate complex property transactions, optimise portfolios, and capitalise on market opportunities.
+                In today's competitive property market, stunning visual presentation can make the difference between a property that sells quickly at full asking price and one that lingers on the market. Our real estate solutions combine cutting-edge technology with creative expertise to showcase properties in their absolute best light.
               </p>
               <p>
-                We bring institutional-grade expertise to property consulting, combining deep market knowledge with rigorous financial analysis. Whether you're a developer planning a major project, an investor building a portfolio, or a business making strategic property decisions, we provide the insights and guidance needed to achieve your objectives while managing risk effectively.
+                We understand that first impressions are everything in real estate. That's why we offer comprehensive visual marketing services that capture the unique character and appeal of each property. From breathtaking aerial footage that showcases location and surroundings to immersive virtual tours that let buyers explore every detail, we create marketing materials that drive genuine buyer interest and engagement.
               </p>
               <p>
-                From initial market research and feasibility analysis through acquisition, development, and asset management, our team delivers end-to-end real estate advisory services. We work with developers, investors, corporations, and family offices across residential, commercial, industrial, and mixed-use property sectors.
+                Whether you're a real estate agent looking to differentiate your listings, a property developer marketing new builds, or a homeowner preparing to sell, our professional services ensure your property stands out in a crowded marketplace and attracts serious, qualified buyers.
               </p>
             </div>
           </div>
@@ -124,26 +124,26 @@ export default function RealEstateSolutionsPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-4">
-              <InteractiveIcon Icon={TrendingUp} size="sm" />
-              <h3 className="text-xl font-semibold tracking-tight">Market Intelligence</h3>
+              <InteractiveIcon Icon={Camera} size="sm" />
+              <h3 className="text-xl font-semibold tracking-tight">Professional Quality Production</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                Access deep market insights based on comprehensive data analysis, local expertise, and industry relationships. We track market trends, transaction activity, and emerging opportunities to keep clients informed and positioned for success.
+                Every video, photo, and tour is produced to the highest professional standards using industry-leading equipment and techniques. Our experienced team knows how to capture properties at their most appealing, using optimal lighting, angles, and composition.
               </p>
             </div>
 
             <div className="space-y-4">
-              <InteractiveIcon Icon={FileSearch} size="sm" />
-              <h3 className="text-xl font-semibold tracking-tight">Rigorous Analysis</h3>
+              <InteractiveIcon Icon={Target} size="sm" />
+              <h3 className="text-xl font-semibold tracking-tight">Comprehensive Marketing Package</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                Every recommendation is supported by thorough financial modelling, market research, and risk assessment. We apply institutional-quality analysis to evaluate opportunities and support confident decision-making.
+                We provide end-to-end visual marketing solutions, from initial property assessment through final delivery of all marketing materials. Our integrated approach ensures consistent, high-quality presentation across all channels and touchpoints.
               </p>
             </div>
 
             <div className="space-y-4">
-              <InteractiveIcon Icon={Briefcase} size="sm" />
-              <h3 className="text-xl font-semibold tracking-tight">End-to-End Support</h3>
+              <InteractiveIcon Icon={Video} size="sm" />
+              <h3 className="text-xl font-semibold tracking-tight">Fast Turnaround Times</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                From initial strategy development through transaction execution and ongoing asset management, we provide comprehensive support throughout the property lifecycle. Our team becomes your trusted advisor for all real estate decisions.
+                We understand the importance of getting properties to market quickly. Our streamlined production process ensures rapid delivery without compromising quality, helping you capitalise on market momentum and buyer interest.
               </p>
             </div>
           </div>
@@ -155,10 +155,10 @@ export default function RealEstateSolutionsPage() {
         <div className="container mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
-              Property Sectors We Serve
+              Our Property Marketing Services
             </h2>
             <p className="text-base text-muted-foreground font-light leading-relaxed max-w-3xl">
-              From commercial developments to residential investments, we provide specialized expertise across all major property sectors.
+              Professional visual marketing solutions that showcase your property and attract qualified buyers.
             </p>
           </div>
           <PropertyCarousel slides={propertySlides} />
@@ -173,7 +173,7 @@ export default function RealEstateSolutionsPage() {
               Our Real Estate Services
             </h2>
             <p className="text-base text-muted-foreground font-light leading-relaxed max-w-3xl">
-              Comprehensive property consulting and investment advisory services designed to maximise value and manage risk across the real estate lifecycle.
+              Complete property marketing solutions designed to showcase your property's best features and attract qualified buyers.
             </p>
           </div>
 
@@ -211,9 +211,9 @@ export default function RealEstateSolutionsPage() {
                   1
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Discovery & Requirements</h3>
+                  <h3 className="text-xl font-semibold tracking-tight">Property Assessment & Planning</h3>
                   <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    We begin by understanding your property objectives, investment criteria, timeline, and constraints. This discovery phase ensures our recommendations align with your specific goals, risk tolerance, and capital requirements.
+                    We begin with a comprehensive property assessment to identify unique selling points, optimal shooting conditions, and the most effective angles and features to highlight. This planning phase ensures we capture everything needed to create compelling marketing materials.
                   </p>
                 </div>
               </div>
@@ -222,9 +222,9 @@ export default function RealEstateSolutionsPage() {
                   2
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Analysis & Strategy Development</h3>
+                  <h3 className="text-xl font-semibold tracking-tight">Professional Production</h3>
                   <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    Our team conducts comprehensive market research, financial analysis, and risk assessment to develop a tailored strategy. We evaluate opportunities, model scenarios, and present clear recommendations supported by data and market intelligence.
+                    Our experienced team uses professional equipment and proven techniques to capture high-quality footage and photography. We work efficiently to minimise disruption while ensuring we have all the content needed to tell your property's story effectively.
                   </p>
                 </div>
               </div>
@@ -233,9 +233,9 @@ export default function RealEstateSolutionsPage() {
                   3
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Execution & Ongoing Support</h3>
+                  <h3 className="text-xl font-semibold tracking-tight">Post-Production & Delivery</h3>
                   <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    We support implementation through transaction execution, coordination with professional advisors, and ongoing asset management. Our team remains engaged to ensure successful outcomes and provide continued strategic guidance as market conditions evolve.
+                    Our skilled editors enhance all footage and photography, creating polished final products that showcase your property at its absolute best. We deliver all materials in the formats you need for various marketing channels, ensuring consistent, professional presentation everywhere your property appears.
                   </p>
                 </div>
               </div>
@@ -251,10 +251,10 @@ export default function RealEstateSolutionsPage() {
             <div className="grid lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-8 space-y-6">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-                  Ready to Maximise Your Property Potential?
+                  Ready to Showcase Your Property?
                 </h2>
                 <p className="text-base text-muted-foreground font-light leading-relaxed max-w-2xl">
-                  Let's discuss how our real estate solutions can support your investment and development objectives
+                  Let's discuss how our real estate marketing solutions can help attract qualified buyers and achieve the best possible outcome
                 </p>
               </div>
 
