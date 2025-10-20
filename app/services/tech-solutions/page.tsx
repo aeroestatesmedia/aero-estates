@@ -149,62 +149,6 @@ export default function TechnologyArchitecturePage() {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20 lg:py-28 bg-foreground/[0.015]">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 tracking-tight">
-              Our Development Process
-            </h2>
-            <div className="space-y-10">
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-bold text-sm">
-                  1
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Discovery & Requirements Analysis</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    We begin with thorough discovery sessions to understand your business objectives, technical requirements, user needs, and existing system constraints. This phase includes stakeholder interviews, technical assessments, and detailed requirements documentation to ensure we build exactly what you need.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-bold text-sm">
-                  2
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Design & Architecture Planning</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    Our team creates comprehensive system architecture and user experience designs that address your requirements while incorporating best practices for security, scalability, and maintainability. We provide detailed technical specifications, wireframes, and prototypes for validation before development begins.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-bold text-sm">
-                  3
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Agile Development & Testing</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    We follow agile development methodologies with regular iterations, continuous testing, and frequent client feedback. Our development process includes automated testing, code reviews, security assessments, and performance optimisation to ensure we deliver high-quality, reliable solutions on schedule.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-bold text-sm">
-                  4
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Deployment & Ongoing Support</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    We handle deployment to production environments, provide comprehensive documentation and training, and offer ongoing maintenance and support. Our post-launch services include monitoring, updates, feature enhancements, and technical support to ensure your solution continues to deliver value over time.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 lg:py-28 bg-background">

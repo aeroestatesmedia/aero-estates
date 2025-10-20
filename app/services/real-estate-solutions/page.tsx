@@ -198,51 +198,6 @@ export default function RealEstateSolutionsPage() {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20 lg:py-28 bg-foreground/[0.015]">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 tracking-tight">
-              Our Approach
-            </h2>
-            <div className="space-y-10">
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-bold text-sm">
-                  1
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Property Assessment & Planning</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    We begin with a comprehensive property assessment to identify unique selling points, optimal shooting conditions, and the most effective angles and features to highlight. This planning phase ensures we capture everything needed to create compelling marketing materials.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-bold text-sm">
-                  2
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Professional Production</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    Our experienced team uses professional equipment and proven techniques to capture high-quality footage and photography. We work efficiently to minimise disruption while ensuring we have all the content needed to tell your property's story effectively.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-bold text-sm">
-                  3
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Post-Production & Delivery</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    Our skilled editors enhance all footage and photography, creating polished final products that showcase your property at its absolute best. We deliver all materials in the formats you need for various marketing channels, ensuring consistent, professional presentation everywhere your property appears.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 lg:py-28 bg-background">

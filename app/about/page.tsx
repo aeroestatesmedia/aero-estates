@@ -125,12 +125,76 @@ export default function AboutPage() {
       {/* Approach Section */}
       <section className="py-20 lg:py-28 bg-background">
         <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Our Approach</h2>
+              <p className="text-base text-muted-foreground font-light leading-relaxed">
+                Regardless of the service, we follow a proven methodology that ensures exceptional results and client satisfaction.
+              </p>
+            </div>
+
+            <div className="space-y-12">
+              <div className="flex gap-8">
+                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-foreground text-background font-bold text-lg">
+                  1
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-2xl font-bold tracking-tight">Discovery & Strategy</h3>
+                  <p className="text-base text-muted-foreground font-light leading-relaxed">
+                    We begin every engagement by deeply understanding your business, objectives, challenges, and target audience. Through comprehensive discovery sessions, research, and analysis, we develop tailored strategies that align with your goals and set the foundation for success.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-8">
+                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-foreground text-background font-bold text-lg">
+                  2
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-2xl font-bold tracking-tight">Planning & Design</h3>
+                  <p className="text-base text-muted-foreground font-light leading-relaxed">
+                    With a clear understanding of your needs, we create detailed plans, designs, and roadmaps. This includes technical specifications, creative concepts, financial models, or marketing strategies—whatever is needed to bring your vision to life with clarity and precision.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-8">
+                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-foreground text-background font-bold text-lg">
+                  3
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-2xl font-bold tracking-tight">Implementation & Execution</h3>
+                  <p className="text-base text-muted-foreground font-light leading-relaxed">
+                    Our expert teams execute the strategy with precision and creativity. Whether developing technology, creating marketing campaigns, producing visual content, or conducting financial analysis, we maintain the highest standards of quality while keeping you informed and involved throughout the process.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-8">
+                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-foreground text-background font-bold text-lg">
+                  4
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-2xl font-bold tracking-tight">Optimisation & Growth</h3>
+                  <p className="text-base text-muted-foreground font-light leading-relaxed">
+                    We don't just deliver and walk away. We continuously monitor performance, gather feedback, analyse results, and refine our approach to maximise ROI and drive sustained growth. Our commitment extends beyond project completion to ensure long-term success.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Working Model Section */}
+      <section className="py-20 lg:py-28 bg-foreground/[0.015]">
+        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Our Approach</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">How We Work</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4 p-8 border border-foreground/5">
+            <div className="space-y-4 p-8 border border-foreground/5 bg-background">
               <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
                 <Briefcase className="w-6 h-6 text-foreground" />
               </div>
@@ -140,31 +204,31 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="space-y-4 p-8 border border-foreground/5">
+            <div className="space-y-4 p-8 border border-foreground/5 bg-background">
               <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
                 <Users className="w-6 h-6 text-foreground" />
               </div>
-              <h3 className="text-xl font-semibold tracking-tight">Collaborative Methodology</h3>
+              <h3 className="text-xl font-semibold tracking-tight">Collaborative Partnership</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 We work closely with our clients as true partners, maintaining open communication and transparency throughout every project to ensure alignment and success.
               </p>
             </div>
 
-            <div className="space-y-4 p-8 border border-foreground/5">
+            <div className="space-y-4 p-8 border border-foreground/5 bg-background">
               <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
                 <Lightbulb className="w-6 h-6 text-foreground" />
               </div>
-              <h3 className="text-xl font-semibold tracking-tight">Innovation-Driven Mindset</h3>
+              <h3 className="text-xl font-semibold tracking-tight">Innovation-Driven</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 We stay ahead of industry trends and embrace cutting-edge technologies and methodologies to deliver solutions that give our clients a competitive advantage.
               </p>
             </div>
 
-            <div className="space-y-4 p-8 border border-foreground/5">
+            <div className="space-y-4 p-8 border border-foreground/5 bg-background">
               <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
                 <Award className="w-6 h-6 text-foreground" />
               </div>
-              <h3 className="text-xl font-semibold tracking-tight">Student Internship Programme</h3>
+              <h3 className="text-xl font-semibold tracking-tight">Student Internships</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed">
                 We invest in the next generation through our internship programme, providing students with real-world experience and professional development opportunities.
               </p>
