@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { LineChart, TrendingUp, FileText, Calculator, PieChart, Target, BarChart3, CircleDollarSign } from 'lucide-react';
 import { ServiceHero } from '@/components/services/service-hero';
 import { Button } from '@/components/ui/button';
-import { InteractiveIcon } from '@/components/ui/interactive-icon';
 
 export const metadata: Metadata = {
   title: 'Equity Analysis Services',
@@ -53,142 +53,173 @@ export default function EquityAnalysisPage() {
       />
 
       {/* Overview Section */}
-      <section className="py-20 lg:py-28 bg-background">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
-            <div className="lg:col-span-5">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
-                Data-Driven Financial Intelligence
-              </h2>
-            </div>
-            <div className="lg:col-span-7 space-y-6 text-base text-muted-foreground font-light leading-relaxed">
-              <p>
-                In today's complex financial landscape, informed decision-making requires rigorous analysis and deep market understanding. Our equity analysis services provide the insights and intelligence businesses need to evaluate opportunities, assess risks, and drive strategic growth.
-              </p>
-              <p>
-                We combine technical financial expertise with industry knowledge to deliver comprehensive analysis that goes beyond the numbers. Whether you're evaluating an acquisition target, planning a capital raise, or developing long-term strategy, we provide the financial intelligence that supports confident decision-making.
-              </p>
-              <p>
-                From startups seeking their first institutional funding to established enterprises planning major transactions, our team brings institutional-grade financial analysis tailored to businesses of all sizes and stages.
-              </p>
+      <section className="py-32 lg:py-40 bg-background">
+        <div className="container mx-auto px-6 sm:px-8 lg:px-16 xl:px-24">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+              <div>
+                <div className="mb-12">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 tracking-tight">
+                    Data-Driven Financial Intelligence
+                  </h2>
+                </div>
+                <div className="space-y-8 text-xl text-muted-foreground font-light leading-relaxed">
+                  <p>
+                    In today's complex financial landscape, informed decision-making requires rigorous analysis and deep market understanding. Our equity analysis services provide the insights and intelligence businesses need to evaluate opportunities, assess risks, and drive strategic growth.
+                  </p>
+                  <p>
+                    We combine technical financial expertise with industry knowledge to deliver comprehensive analysis that goes beyond the numbers. Whether you're evaluating an acquisition target, planning a capital raise, or developing long-term strategy, we provide the financial intelligence that supports confident decision-making.
+                  </p>
+                </div>
+              </div>
+              <div className="relative h-[500px] lg:h-[600px]">
+                <Image
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop"
+                  alt="Financial data analysis and charts"
+                  fill
+                  className="object-cover rounded-sm"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Key Benefits Section */}
-      <section className="py-20 lg:py-28 bg-foreground/[0.015]">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="max-w-4xl mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
-              Why Choose Our Equity Analysis Services
-            </h2>
-            <p className="text-base text-muted-foreground font-light leading-relaxed">
-              We deliver institutional-quality analysis with a practical, business-focused approach.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-4">
-              <InteractiveIcon Icon={BarChart3} size="sm" />
-              <h3 className="text-xl font-semibold tracking-tight">Rigorous Methodology</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                Our analysis follows established financial standards and best practices, ensuring credibility and reliability. We use sophisticated modelling techniques while maintaining transparency in our assumptions and methodologies.
+      <section className="py-32 lg:py-40 bg-muted/20">
+        <div className="container mx-auto px-6 sm:px-8 lg:px-16 xl:px-24">
+          <div className="max-w-6xl mx-auto">
+            <div className="mb-20">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
+                Why Choose Our Equity Analysis Services
+              </h2>
+              <p className="text-xl text-muted-foreground font-light leading-relaxed max-w-3xl">
+                We deliver institutional-quality analysis with a practical, business-focused approach.
               </p>
             </div>
 
-            <div className="space-y-4">
-              <InteractiveIcon Icon={Target} size="sm" />
-              <h3 className="text-xl font-semibold tracking-tight">Actionable Insights</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                We don't just deliver data—we provide clear, actionable recommendations that directly support your business objectives. Our reports translate complex financial analysis into strategic insights you can act on.
-              </p>
-            </div>
+            <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
+              <div className="space-y-6">
+                <div className="w-14 h-14 flex items-center justify-center bg-foreground/5">
+                  <BarChart3 className="w-7 h-7 text-foreground" />
+                </div>
+                <h3 className="text-2xl font-bold tracking-tight">Rigorous Methodology</h3>
+                <p className="text-lg text-muted-foreground font-light leading-relaxed">
+                  Our analysis follows established financial standards and best practices, ensuring credibility and reliability. We use sophisticated modelling techniques while maintaining transparency in our assumptions and methodologies.
+                </p>
+              </div>
 
-            <div className="space-y-4">
-              <InteractiveIcon Icon={TrendingUp} size="sm" />
-              <h3 className="text-xl font-semibold tracking-tight">Industry Expertise</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                Our team combines financial analysis skills with deep sector knowledge, enabling us to contextualise findings within industry dynamics and competitive realities that matter to your business.
-              </p>
+              <div className="space-y-6">
+                <div className="w-14 h-14 flex items-center justify-center bg-foreground/5">
+                  <Target className="w-7 h-7 text-foreground" />
+                </div>
+                <h3 className="text-2xl font-bold tracking-tight">Actionable Insights</h3>
+                <p className="text-lg text-muted-foreground font-light leading-relaxed">
+                  We don't just deliver data—we provide clear, actionable recommendations that directly support your business objectives. Our reports translate complex financial analysis into strategic insights you can act on.
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                <div className="w-14 h-14 flex items-center justify-center bg-foreground/5">
+                  <TrendingUp className="w-7 h-7 text-foreground" />
+                </div>
+                <h3 className="text-2xl font-bold tracking-tight">Industry Expertise</h3>
+                <p className="text-lg text-muted-foreground font-light leading-relaxed">
+                  Our team combines financial analysis skills with deep sector knowledge, enabling us to contextualise findings within industry dynamics and competitive realities that matter to your business.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Offerings List */}
-      <section className="py-20 lg:py-28 bg-background">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
-              Our Equity Analysis Services
-            </h2>
-            <p className="text-base text-muted-foreground font-light leading-relaxed max-w-3xl">
-              Comprehensive financial analysis and strategic insights to support critical business decisions and drive sustainable growth.
-            </p>
-          </div>
+      <section className="py-32 lg:py-40 bg-background">
+        <div className="container mx-auto px-6 sm:px-8 lg:px-16 xl:px-24">
+          <div className="max-w-6xl mx-auto">
+            <div className="mb-20">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
+                Our Equity Analysis Services
+              </h2>
+              <p className="text-xl text-muted-foreground font-light leading-relaxed max-w-3xl">
+                Comprehensive financial analysis and strategic insights to support critical business decisions and drive sustainable growth.
+              </p>
+            </div>
 
-          <div className="space-y-0">
-            {offerings.map((offering, index) => {
-              const Icon = offering.icon;
-              return (
-                <div key={index} className={`py-10 border-t border-foreground/5 ${index === offerings.length - 1 ? 'border-b' : ''}`}>
-                  <div className="grid lg:grid-cols-12 gap-6">
-                    <div className="lg:col-span-4 flex items-start gap-4">
-                      <InteractiveIcon Icon={Icon} size="sm" className="flex-shrink-0" />
-                      <h3 className="text-xl font-semibold tracking-tight pt-2">{offering.title}</h3>
-                    </div>
-                    <div className="lg:col-span-8">
-                      <p className="text-base text-muted-foreground font-light leading-relaxed">{offering.description}</p>
+            <div className="space-y-16">
+              {offerings.map((offering, index) => {
+                const Icon = offering.icon;
+                return (
+                  <div key={index} className="space-y-6">
+                    <div className="flex items-start gap-6">
+                      <div className="w-14 h-14 flex items-center justify-center bg-foreground/5 flex-shrink-0">
+                        <Icon className="w-7 h-7 text-foreground" />
+                      </div>
+                      <div className="space-y-4">
+                        <h3 className="text-2xl font-bold tracking-tight">{offering.title}</h3>
+                        <p className="text-lg text-muted-foreground font-light leading-relaxed">{offering.description}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Process Section */}
-      <section className="py-20 lg:py-28 bg-foreground/[0.015]">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 tracking-tight">
-              Our Methodology
-            </h2>
-            <div className="space-y-10">
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-bold text-sm">
-                  1
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Data Collection & Analysis</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    We gather comprehensive financial data, market intelligence, and operational metrics to build a complete picture of the opportunity or challenge. This includes detailed financial statement analysis, industry research, and stakeholder consultations.
-                  </p>
+      <section className="py-32 lg:py-40 bg-muted/20">
+        <div className="container mx-auto px-6 sm:px-8 lg:px-16 xl:px-24">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+              <div>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 tracking-tight">
+                  Our Methodology
+                </h2>
+                <div className="space-y-12">
+                  <div className="flex gap-8">
+                    <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-foreground text-background font-bold text-lg">
+                      1
+                    </div>
+                    <div className="space-y-3">
+                      <h3 className="text-2xl font-bold tracking-tight">Data Collection & Analysis</h3>
+                      <p className="text-lg text-muted-foreground font-light leading-relaxed">
+                        We gather comprehensive financial data, market intelligence, and operational metrics to build a complete picture of the opportunity or challenge.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-8">
+                    <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-foreground text-background font-bold text-lg">
+                      2
+                    </div>
+                    <div className="space-y-3">
+                      <h3 className="text-2xl font-bold tracking-tight">Modelling & Scenario Planning</h3>
+                      <p className="text-lg text-muted-foreground font-light leading-relaxed">
+                        Using sophisticated financial models, we analyse multiple scenarios to understand potential outcomes and risks.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-8">
+                    <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-foreground text-background font-bold text-lg">
+                      3
+                    </div>
+                    <div className="space-y-3">
+                      <h3 className="text-2xl font-bold tracking-tight">Insights & Strategic Recommendations</h3>
+                      <p className="text-lg text-muted-foreground font-light leading-relaxed">
+                        We deliver clear, actionable insights with strategic recommendations tailored to your specific objectives.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-bold text-sm">
-                  2
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Modelling & Scenario Planning</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    Using sophisticated financial models, we analyse multiple scenarios to understand potential outcomes and risks. Our models are built with flexibility to test various assumptions and strategic alternatives, providing a range of outcomes for decision-making.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-bold text-sm">
-                  3
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight">Insights & Strategic Recommendations</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    We deliver clear, actionable insights with strategic recommendations tailored to your specific objectives. Our reports present findings in an accessible format while maintaining analytical rigor, ensuring stakeholders at all levels can understand and act on our conclusions.
-                  </p>
-                </div>
+              <div className="relative h-[500px] hidden lg:block">
+                <Image
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2340&auto=format&fit=crop"
+                  alt="Financial planning and analysis"
+                  fill
+                  className="object-cover rounded-sm"
+                />
               </div>
             </div>
           </div>
@@ -196,21 +227,23 @@ export default function EquityAnalysisPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-28 bg-background">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="border-t border-foreground/5 pt-16">
-            <div className="grid lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-8 space-y-6">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-                  Make Informed Financial Decisions
+      <section className="py-32 lg:py-40 bg-background">
+        <div className="container mx-auto px-6 sm:px-8 lg:px-16 xl:px-24">
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="space-y-12">
+              <div className="space-y-6">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+                  Make Informed
+                  <br />
+                  Financial Decisions
                 </h2>
-                <p className="text-base text-muted-foreground font-light leading-relaxed max-w-2xl">
+                <p className="text-xl text-muted-foreground font-light leading-relaxed max-w-2xl mx-auto">
                   Partner with us for expert equity analysis and financial intelligence that drives strategic success
                 </p>
               </div>
 
-              <div className="lg:col-span-4 flex lg:justify-end gap-4">
-                <Button size="lg" asChild className="bg-foreground text-background hover:bg-foreground/90 border-0 px-8">
+              <div>
+                <Button size="lg" asChild className="bg-foreground text-background hover:bg-foreground/90 border-0 px-10 h-14 text-base">
                   <Link href="/contact">Get Started</Link>
                 </Button>
               </div>
