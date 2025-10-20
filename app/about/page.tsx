@@ -96,8 +96,11 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 lg:py-28 bg-foreground/[0.015]">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+      <section className="relative py-20 lg:py-28 bg-foreground/[0.015] overflow-hidden">
+        <div className="absolute top-0 right-1/3 w-[400px] h-[400px] bg-gradient-to-bl from-foreground/[0.02] via-transparent to-transparent blur-3xl pointer-events-none animate-pulse" />
+        <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-gradient-to-tr from-foreground/[0.015] via-transparent to-transparent blur-3xl pointer-events-none" />
+
+        <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Our Values</h2>
             <p className="text-base text-muted-foreground font-light max-w-2xl">
@@ -105,16 +108,19 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
-                <div key={index} className="space-y-4">
-                  <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-foreground" />
+                <div key={index} className="group relative p-6 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+                  <div className="relative space-y-4">
+                    <div className="w-12 h-12 rounded-xl bg-foreground/5 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-5 h-5 text-foreground" />
+                    </div>
+                    <h3 className="text-lg font-semibold tracking-tight">{value.title}</h3>
+                    <p className="text-sm text-muted-foreground font-light leading-relaxed">{value.description}</p>
                   </div>
-                  <h3 className="text-lg font-semibold tracking-tight">{value.title}</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">{value.description}</p>
                 </div>
               );
             })}
@@ -187,51 +193,66 @@ export default function AboutPage() {
       </section>
 
       {/* Working Model Section */}
-      <section className="py-20 lg:py-28 bg-foreground/[0.015]">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+      <section className="relative py-20 lg:py-28 bg-foreground/[0.015] overflow-hidden">
+        <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-foreground/[0.02] via-transparent to-transparent blur-3xl pointer-events-none" />
+        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-gradient-to-tr from-foreground/[0.015] via-transparent to-transparent blur-3xl pointer-events-none" />
+
+        <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">How We Work</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4 p-8 border border-foreground/5 bg-background">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <Briefcase className="w-6 h-6 text-foreground" />
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="group relative p-8 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+              <div className="relative space-y-4">
+                <div className="w-12 h-12 rounded-xl bg-foreground/5 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Briefcase className="w-6 h-6 text-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold tracking-tight">Hybrid Working Model</h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  We embrace modern work practices with a hybrid approach, combining the flexibility of remote work with in-person collaboration when needed. This allows us to attract top talent and maintain work-life balance while fostering strong team connections.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold tracking-tight">Hybrid Working Model</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                We embrace modern work practices with a hybrid approach, combining the flexibility of remote work with in-person collaboration when needed. This allows us to attract top talent and maintain work-life balance while fostering strong team connections.
-              </p>
             </div>
 
-            <div className="space-y-4 p-8 border border-foreground/5 bg-background">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <Users className="w-6 h-6 text-foreground" />
+            <div className="group relative p-8 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+              <div className="relative space-y-4">
+                <div className="w-12 h-12 rounded-xl bg-foreground/5 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Users className="w-6 h-6 text-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold tracking-tight">Collaborative Partnership</h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  We work closely with our clients as true partners, maintaining open communication and transparency throughout every project to ensure alignment and success.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold tracking-tight">Collaborative Partnership</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                We work closely with our clients as true partners, maintaining open communication and transparency throughout every project to ensure alignment and success.
-              </p>
             </div>
 
-            <div className="space-y-4 p-8 border border-foreground/5 bg-background">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <Lightbulb className="w-6 h-6 text-foreground" />
+            <div className="group relative p-8 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+              <div className="relative space-y-4">
+                <div className="w-12 h-12 rounded-xl bg-foreground/5 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Lightbulb className="w-6 h-6 text-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold tracking-tight">Innovation-Driven</h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  We stay ahead of industry trends and embrace cutting-edge technologies and methodologies to deliver solutions that give our clients a competitive advantage.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold tracking-tight">Innovation-Driven</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                We stay ahead of industry trends and embrace cutting-edge technologies and methodologies to deliver solutions that give our clients a competitive advantage.
-              </p>
             </div>
 
-            <div className="space-y-4 p-8 border border-foreground/5 bg-background">
-              <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                <Award className="w-6 h-6 text-foreground" />
+            <div className="group relative p-8 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+              <div className="relative space-y-4">
+                <div className="w-12 h-12 rounded-xl bg-foreground/5 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Award className="w-6 h-6 text-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold tracking-tight">Student Internships</h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  We invest in the next generation through our internship programme, providing students with real-world experience and professional development opportunities.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold tracking-tight">Student Internships</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                We invest in the next generation through our internship programme, providing students with real-world experience and professional development opportunities.
-              </p>
             </div>
           </div>
         </div>

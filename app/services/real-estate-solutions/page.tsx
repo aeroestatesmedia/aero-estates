@@ -111,8 +111,11 @@ export default function RealEstateSolutionsPage() {
       </section>
 
       {/* Key Benefits Section */}
-      <section className="py-20 lg:py-28 bg-foreground/[0.015]">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+      <section className="relative py-20 lg:py-28 bg-foreground/[0.015] overflow-hidden">
+        <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-gradient-to-br from-foreground/[0.02] via-transparent to-transparent blur-3xl pointer-events-none" />
+        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-tl from-foreground/[0.015] via-transparent to-transparent blur-3xl pointer-events-none" />
+
+        <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
           <div className="max-w-4xl mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
               Why Choose Our Real Estate Solutions
@@ -122,29 +125,38 @@ export default function RealEstateSolutionsPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-4">
-              <InteractiveIcon Icon={Camera} size="sm" />
-              <h3 className="text-xl font-semibold tracking-tight">Professional Quality Production</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                Every video, photo, and tour is produced to the highest professional standards using industry-leading equipment and techniques. Our experienced team knows how to capture properties at their most appealing, using optimal lighting, angles, and composition.
-              </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="group relative p-6 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+              <div className="relative space-y-4">
+                <InteractiveIcon Icon={Camera} size="sm" />
+                <h3 className="text-xl font-semibold tracking-tight">Professional Quality Production</h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  Every video, photo, and tour is produced to the highest professional standards using industry-leading equipment and techniques. Our experienced team knows how to capture properties at their most appealing, using optimal lighting, angles, and composition.
+                </p>
+              </div>
             </div>
 
-            <div className="space-y-4">
-              <InteractiveIcon Icon={Target} size="sm" />
-              <h3 className="text-xl font-semibold tracking-tight">Comprehensive Marketing Package</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                We provide end-to-end visual marketing solutions, from initial property assessment through final delivery of all marketing materials. Our integrated approach ensures consistent, high-quality presentation across all channels and touchpoints.
-              </p>
+            <div className="group relative p-6 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+              <div className="relative space-y-4">
+                <InteractiveIcon Icon={Target} size="sm" />
+                <h3 className="text-xl font-semibold tracking-tight">Comprehensive Marketing Package</h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  We provide end-to-end visual marketing solutions, from initial property assessment through final delivery of all marketing materials. Our integrated approach ensures consistent, high-quality presentation across all channels and touchpoints.
+                </p>
+              </div>
             </div>
 
-            <div className="space-y-4">
-              <InteractiveIcon Icon={Video} size="sm" />
-              <h3 className="text-xl font-semibold tracking-tight">Fast Turnaround Times</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                We understand the importance of getting properties to market quickly. Our streamlined production process ensures rapid delivery without compromising quality, helping you capitalise on market momentum and buyer interest.
-              </p>
+            <div className="group relative p-6 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+              <div className="relative space-y-4">
+                <InteractiveIcon Icon={Video} size="sm" />
+                <h3 className="text-xl font-semibold tracking-tight">Fast Turnaround Times</h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  We understand the importance of getting properties to market quickly. Our streamlined production process ensures rapid delivery without compromising quality, helping you capitalise on market momentum and buyer interest.
+                </p>
+              </div>
             </div>
           </div>
         </div>

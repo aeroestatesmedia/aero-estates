@@ -77,8 +77,11 @@ export default function TechnologyArchitecturePage() {
       </section>
 
       {/* Key Benefits Section */}
-      <section className="py-20 lg:py-28 bg-foreground/[0.015]">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+      <section className="relative py-20 lg:py-28 bg-foreground/[0.015] overflow-hidden">
+        <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-gradient-to-br from-foreground/[0.02] via-transparent to-transparent blur-3xl pointer-events-none" />
+        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-tl from-foreground/[0.015] via-transparent to-transparent blur-3xl pointer-events-none" />
+
+        <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
           <div className="max-w-4xl mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
               Why Choose Our Tech Solutions Services
@@ -88,29 +91,38 @@ export default function TechnologyArchitecturePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-4">
-              <InteractiveIcon Icon={Code} size="sm" />
-              <h3 className="text-xl font-semibold tracking-tight">Tailored to Your Needs</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                Every solution we build is custom-designed for your specific requirements, business processes, and objectives. We don't believe in one-size-fits-all approaches—instead, we create technology that fits seamlessly into your operations and enhances your unique value proposition.
-              </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="group relative p-6 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+              <div className="relative space-y-4">
+                <InteractiveIcon Icon={Code} size="sm" />
+                <h3 className="text-xl font-semibold tracking-tight">Tailored to Your Needs</h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  Every solution we build is custom-designed for your specific requirements, business processes, and objectives. We don't believe in one-size-fits-all approaches—instead, we create technology that fits seamlessly into your operations and enhances your unique value proposition.
+                </p>
+              </div>
             </div>
 
-            <div className="space-y-4">
-              <InteractiveIcon Icon={Zap} size="sm" />
-              <h3 className="text-xl font-semibold tracking-tight">Future-Ready Architecture</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                Our solutions are built with scalability and evolution in mind. We use modern architecture patterns, cloud-native approaches, and industry best practices to ensure your technology investment continues to deliver value as your business grows and technology landscapes evolve.
-              </p>
+            <div className="group relative p-6 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+              <div className="relative space-y-4">
+                <InteractiveIcon Icon={Zap} size="sm" />
+                <h3 className="text-xl font-semibold tracking-tight">Future-Ready Architecture</h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  Our solutions are built with scalability and evolution in mind. We use modern architecture patterns, cloud-native approaches, and industry best practices to ensure your technology investment continues to deliver value as your business grows and technology landscapes evolve.
+                </p>
+              </div>
             </div>
 
-            <div className="space-y-4">
-              <InteractiveIcon Icon={Brain} size="sm" />
-              <h3 className="text-xl font-semibold tracking-tight">AI-Powered Innovation</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                We integrate artificial intelligence and machine learning capabilities that provide genuine business value, from intelligent automation that reduces manual work to predictive analytics that inform strategic decisions. Our AI solutions are practical, measurable, and designed to deliver clear ROI.
-              </p>
+            <div className="group relative p-6 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+              <div className="relative space-y-4">
+                <InteractiveIcon Icon={Brain} size="sm" />
+                <h3 className="text-xl font-semibold tracking-tight">AI-Powered Innovation</h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  We integrate artificial intelligence and machine learning capabilities that provide genuine business value, from intelligent automation that reduces manual work to predictive analytics that inform strategic decisions. Our AI solutions are practical, measurable, and designed to deliver clear ROI.
+                </p>
+              </div>
             </div>
           </div>
         </div>

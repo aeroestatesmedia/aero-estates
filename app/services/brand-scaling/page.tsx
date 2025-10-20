@@ -87,8 +87,12 @@ export default function DigitalMarketingPage() {
       </section>
 
       {/* Key Benefits Section */}
-      <section className="py-32 lg:py-40 bg-muted/20">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-16 xl:px-24">
+      <section className="relative py-32 lg:py-40 bg-muted/20 overflow-hidden">
+        {/* Glassmorphism background */}
+        <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-gradient-to-br from-foreground/[0.02] via-transparent to-transparent blur-3xl pointer-events-none" />
+        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-tl from-foreground/[0.015] via-transparent to-transparent blur-3xl pointer-events-none" />
+
+        <div className="container mx-auto px-6 sm:px-8 lg:px-16 xl:px-24 relative z-10">
           <div className="max-w-6xl mx-auto">
             <div className="mb-20">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
@@ -99,35 +103,44 @@ export default function DigitalMarketingPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
-              <div className="space-y-6">
-                <div className="w-14 h-14 flex items-center justify-center bg-foreground/5">
-                  <BarChart className="w-7 h-7 text-foreground" />
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="group relative p-8 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+                <div className="relative space-y-6">
+                  <div className="w-14 h-14 flex items-center justify-center bg-foreground/5 rounded-xl backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+                    <BarChart className="w-7 h-7 text-foreground" />
+                  </div>
+                  <h3 className="text-2xl font-bold tracking-tight">Data-Driven Approach</h3>
+                  <p className="text-lg text-muted-foreground font-light leading-relaxed">
+                    Every decision we make is backed by data and analytics. We continuously monitor performance metrics, conduct A/B testing, and refine strategies to ensure optimal ROI and sustainable growth.
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold tracking-tight">Data-Driven Approach</h3>
-                <p className="text-lg text-muted-foreground font-light leading-relaxed">
-                  Every decision we make is backed by data and analytics. We continuously monitor performance metrics, conduct A/B testing, and refine strategies to ensure optimal ROI and sustainable growth.
-                </p>
               </div>
 
-              <div className="space-y-6">
-                <div className="w-14 h-14 flex items-center justify-center bg-foreground/5">
-                  <Users className="w-7 h-7 text-foreground" />
+              <div className="group relative p-8 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+                <div className="relative space-y-6">
+                  <div className="w-14 h-14 flex items-center justify-center bg-foreground/5 rounded-xl backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+                    <Users className="w-7 h-7 text-foreground" />
+                  </div>
+                  <h3 className="text-2xl font-bold tracking-tight">Audience-First Methodology</h3>
+                  <p className="text-lg text-muted-foreground font-light leading-relaxed">
+                    We invest time understanding your target audience—their behaviours, preferences, and pain points—to create campaigns that truly resonate and drive meaningful engagement.
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold tracking-tight">Audience-First Methodology</h3>
-                <p className="text-lg text-muted-foreground font-light leading-relaxed">
-                  We invest time understanding your target audience—their behaviours, preferences, and pain points—to create campaigns that truly resonate and drive meaningful engagement.
-                </p>
               </div>
 
-              <div className="space-y-6">
-                <div className="w-14 h-14 flex items-center justify-center bg-foreground/5">
-                  <TrendingUp className="w-7 h-7 text-foreground" />
+              <div className="group relative p-8 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+                <div className="relative space-y-6">
+                  <div className="w-14 h-14 flex items-center justify-center bg-foreground/5 rounded-xl backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+                    <TrendingUp className="w-7 h-7 text-foreground" />
+                  </div>
+                  <h3 className="text-2xl font-bold tracking-tight">Transparent Reporting</h3>
+                  <p className="text-lg text-muted-foreground font-light leading-relaxed">
+                    Receive clear, comprehensive reports that demonstrate the impact of your marketing investment. We believe in complete transparency with regular updates on campaign performance and strategic recommendations.
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold tracking-tight">Transparent Reporting</h3>
-                <p className="text-lg text-muted-foreground font-light leading-relaxed">
-                  Receive clear, comprehensive reports that demonstrate the impact of your marketing investment. We believe in complete transparency with regular updates on campaign performance and strategic recommendations.
-                </p>
               </div>
             </div>
           </div>

@@ -16,8 +16,12 @@ const iconMap = {
 
 export function ServicesGrid() {
   return (
-    <section className="py-20 lg:py-28 bg-background">
-      <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+    <section className="relative py-20 lg:py-28 bg-background overflow-hidden">
+      {/* Glassmorphism background elements */}
+      <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-foreground/[0.02] via-transparent to-transparent blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-gradient-to-tr from-foreground/[0.025] via-transparent to-transparent blur-3xl pointer-events-none" />
+
+      <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,41 +38,43 @@ export function ServicesGrid() {
           </p>
         </motion.div>
 
-        {/* Services list */}
+        {/* Services grid with glassmorphism cards */}
         <motion.div
           variants={staggerContainer}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="space-y-0"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
-          {SERVICES.map((service, index) => {
+          {SERVICES.map((service) => {
             const Icon = iconMap[service.icon as keyof typeof iconMap];
             return (
               <motion.div key={service.id} variants={staggerItem}>
-                <Link href={`/services/${service.slug}`} className="group block">
-                  <div className={`py-8 border-t border-foreground/5 hover:bg-foreground/[0.02] transition-all duration-200 ${index === SERVICES.length - 1 ? 'border-b' : ''}`}>
-                    <div className="flex items-center gap-6">
-                      {/* Icon and title */}
-                      <div className="flex items-center gap-4 flex-1 lg:flex-[0_0_41.666%]">
-                        <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center flex-shrink-0">
-                          <Icon className="w-6 h-6 text-foreground" />
-                        </div>
-                        <h3 className="text-xl font-semibold tracking-tight">
-                          {service.name}
-                        </h3>
+                <Link href={`/services/${service.slug}`} className="group block h-full">
+                  <div className="relative h-full p-8 rounded-2xl border border-foreground/10 bg-background/40 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+                    {/* Glassmorphism overlay on hover */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+
+                    <div className="relative space-y-4">
+                      {/* Icon */}
+                      <div className="w-14 h-14 rounded-xl bg-foreground/5 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="w-7 h-7 text-foreground" />
                       </div>
+
+                      {/* Title */}
+                      <h3 className="text-2xl font-bold tracking-tight">
+                        {service.name}
+                      </h3>
 
                       {/* Description */}
-                      <div className="hidden lg:block flex-1 lg:flex-[0_0_50%]">
-                        <p className="text-muted-foreground font-light leading-relaxed">
-                          {service.brief}
-                        </p>
-                      </div>
+                      <p className="text-muted-foreground font-light leading-relaxed">
+                        {service.brief}
+                      </p>
 
                       {/* Arrow */}
-                      <div className="flex items-center justify-end lg:flex-[0_0_8.333%]">
-                        <ArrowRight className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                      <div className="flex items-center gap-2 text-sm font-medium pt-2">
+                        <span className="opacity-0 group-hover:opacity-100 transition-opacity">Learn more</span>
+                        <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                       </div>
                     </div>
                   </div>

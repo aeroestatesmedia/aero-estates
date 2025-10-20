@@ -29,8 +29,12 @@ const benefits = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-20 lg:py-28 bg-foreground/[0.015]">
-      <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+    <section className="relative py-20 lg:py-28 bg-foreground/[0.015] overflow-hidden">
+      {/* Glassmorphism background elements */}
+      <div className="absolute top-0 right-1/3 w-[400px] h-[400px] bg-gradient-to-bl from-foreground/[0.02] via-transparent to-transparent blur-3xl pointer-events-none animate-pulse" />
+      <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-gradient-to-tr from-foreground/[0.015] via-transparent to-transparent blur-3xl pointer-events-none" />
+
+      <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +55,7 @@ export function WhyChooseUs() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
@@ -59,13 +63,20 @@ export function WhyChooseUs() {
               <motion.div
                 key={index}
                 variants={staggerItem}
-                className="space-y-4"
+                className="group"
               >
-                <div className="w-12 h-12 rounded-full bg-foreground/5 flex items-center justify-center">
-                  <Icon className="w-5 h-5 text-foreground" />
+                <div className="relative h-full p-6 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-xl shadow-lg shadow-foreground/5 hover:shadow-xl hover:shadow-foreground/10 hover:border-foreground/20 hover:-translate-y-1 transition-all duration-300">
+                  {/* Glassmorphism overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.03] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+
+                  <div className="relative space-y-4">
+                    <div className="w-12 h-12 rounded-xl bg-foreground/5 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-5 h-5 text-foreground" />
+                    </div>
+                    <h3 className="text-lg font-semibold tracking-tight">{benefit.title}</h3>
+                    <p className="text-sm text-muted-foreground font-light leading-relaxed">{benefit.description}</p>
+                  </div>
                 </div>
-                <h3 className="text-lg font-semibold tracking-tight">{benefit.title}</h3>
-                <p className="text-sm text-muted-foreground font-light leading-relaxed">{benefit.description}</p>
               </motion.div>
             );
           })}
