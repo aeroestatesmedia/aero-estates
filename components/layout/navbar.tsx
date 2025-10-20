@@ -73,8 +73,11 @@ export function Navbar() {
                   <Link
                     href="/"
                     className={cn(
-                      'group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50',
-                      pathname === '/' && 'bg-accent text-accent-foreground'
+                      'group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50',
+                      !isScrolled && pathname === '/'
+                        ? 'hover:bg-foreground/10 hover:backdrop-blur-xl focus:bg-foreground/10 focus:backdrop-blur-xl'
+                        : 'hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
+                      pathname === '/' && isScrolled && 'bg-accent text-accent-foreground'
                     )}
                   >
                     Home
@@ -82,7 +85,15 @@ export function Navbar() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+                  <NavigationMenuTrigger
+                    className={cn(
+                      !isScrolled && pathname === '/'
+                        ? '[&]:bg-transparent [&]:hover:bg-foreground/10 [&]:hover:backdrop-blur-xl [&]:data-[state=open]:bg-foreground/10 [&]:data-[state=open]:backdrop-blur-xl'
+                        : ''
+                    )}
+                  >
+                    Services
+                  </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
                       {SERVICES.map((service) => (
@@ -108,7 +119,10 @@ export function Navbar() {
                   <Link
                     href="/about"
                     className={cn(
-                      'group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50',
+                      'group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50',
+                      !isScrolled && pathname === '/'
+                        ? 'hover:bg-foreground/10 hover:backdrop-blur-xl focus:bg-foreground/10 focus:backdrop-blur-xl'
+                        : 'hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
                       pathname === '/about' && 'bg-accent text-accent-foreground'
                     )}
                   >
@@ -120,7 +134,10 @@ export function Navbar() {
                   <Link
                     href="/contact"
                     className={cn(
-                      'group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50',
+                      'group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50',
+                      !isScrolled && pathname === '/'
+                        ? 'hover:bg-foreground/10 hover:backdrop-blur-xl focus:bg-foreground/10 focus:backdrop-blur-xl'
+                        : 'hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
                       pathname === '/contact' && 'bg-accent text-accent-foreground'
                     )}
                   >

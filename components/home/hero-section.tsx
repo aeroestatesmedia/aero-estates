@@ -2,26 +2,38 @@
 
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, ChevronDown } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export function HeroSection() {
   return (
-    <section className="relative h-[85vh] min-h-[600px] flex items-center bg-background overflow-hidden">
-      {/* Subtle background element */}
-      <div className="absolute inset-0 opacity-[0.015]">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-foreground/5 to-transparent" />
+    <section className="relative h-screen min-h-[600px] flex items-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/sean-pollock-PhYq704ffdA-unsplash.jpg"
+          alt="Modern architecture"
+          fill
+          className="object-cover"
+          priority
+          quality={100}
+          sizes="100vw"
+        />
+        {/* Glassmorphism tint overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-background/30" />
+        {/* Additional gradient for depth */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
       </div>
 
       <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        <div className="grid lg:grid-cols-12 gap-12 items-center">
-          {/* Left: Text content */}
+        <div className="max-w-4xl">
+          {/* Text content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-7 space-y-8"
+            className="space-y-8"
           >
             <div className="space-y-6">
               <motion.h1
@@ -34,7 +46,7 @@ export function HeroSection() {
               </motion.h1>
 
               <motion.p
-                className="text-lg text-muted-foreground font-light leading-relaxed max-w-xl"
+                className="text-lg text-muted-foreground font-light leading-relaxed max-w-2xl"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -62,25 +74,6 @@ export function HeroSection() {
                 </Link>
               </Button>
             </motion.div>
-          </motion.div>
-
-          {/* Right: Visual element/placeholder */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:col-span-5 hidden lg:block"
-          >
-            <div className="aspect-[4/3] rounded-sm overflow-hidden">
-              <Image
-                src="/images/tsuyoshi-kozu--BnlR3U65hg-unsplash.jpg"
-                alt="Aero Estates"
-                width={800}
-                height={600}
-                className="w-full h-full object-cover"
-                priority
-              />
-            </div>
           </motion.div>
         </div>
       </div>
