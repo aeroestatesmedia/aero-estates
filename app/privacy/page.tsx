@@ -144,7 +144,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <div className="text-muted-foreground space-y-2">
                   <p><strong>Email:</strong> {COMPANY_INFO.email}</p>
-                  <p><strong>Address:</strong> {COMPANY_INFO.address}</p>
+                  <p><strong>Location:</strong> {COMPANY_INFO.location}</p>
                 </div>
               </section>
             </div>

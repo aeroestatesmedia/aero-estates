@@ -1,6 +1,4 @@
 import type { Metadata } from 'next';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { COMPANY_INFO } from '@/lib/constants';
 import { Award, Users, Lightbulb, Heart, MapPin, Briefcase } from 'lucide-react';
 import Image from 'next/image';

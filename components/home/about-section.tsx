@@ -1,8 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Badge } from '@/components/ui/badge';
-import { COMPANY_INFO } from '@/lib/constants';
 import Image from 'next/image';
 
 export function AboutSection() {
