@@ -5,7 +5,7 @@ const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters').max(50),
   email: z.string().email('Please enter a valid email address'),
   company: z.string().optional(),
-  service: z.enum(['digital-marketing', 'equity-analysis', 'real-estate-solutions', 'technology-architecture', 'general']),
+  service: z.enum(['brand-scaling', 'equity-analysis', 'real-estate-solutions', 'tech-solutions', 'general']),
   message: z.string().min(10, 'Message must be at least 10 characters').max(1000),
 });
 
@@ -16,33 +16,40 @@ export async function POST(request: NextRequest) {
     // Validate the request body
     const validatedData = contactSchema.parse(body);
 
-    // In a production environment, you would:
-    // 1. Send an email using a service like Resend, SendGrid, or Nodemailer
-    // 2. Store the submission in a database
-    // 3. Send a confirmation email to the user
-    // 4. Implement rate limiting
+    // Send data to Google Sheets via Apps Script
+    const googleScriptUrl = process.env.GOOGLE_APPS_SCRIPT_URL;
 
-    // For now, we'll just log the data and return success
+    if (googleScriptUrl) {
+      try {
+        const timestamp = new Date().toISOString();
+        const sheetData = {
+          timestamp,
+          name: validatedData.name,
+          email: validatedData.email,
+          company: validatedData.company || '',
+          service: validatedData.service,
+          message: validatedData.message,
+        };
+
+        const response = await fetch(googleScriptUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(sheetData),
+        });
+
+        if (!response.ok) {
+          console.error('Failed to send data to Google Sheets:', await response.text());
+        }
+      } catch (sheetError) {
+        console.error('Error sending to Google Sheets:', sheetError);
+        // Don't fail the entire request if Google Sheets fails
+      }
+    }
+
+    // Log the data
     console.log('Contact form submission:', validatedData);
-
-    // Example using Resend (uncomment when configured):
-    // import { Resend } from 'resend';
-    // const resend = new Resend(process.env.RESEND_API_KEY);
-    //
-    // await resend.emails.send({
-    //   from: 'Aero Estates <onboarding@resend.dev>',
-    //   to: ['hello@aeroestates.ie'],
-    //   subject: `New Contact Form Submission from ${validatedData.name}`,
-    //   html: `
-    //     <h2>New Contact Form Submission</h2>
-    //     <p><strong>Name:</strong> ${validatedData.name}</p>
-    //     <p><strong>Email:</strong> ${validatedData.email}</p>
-    //     <p><strong>Company:</strong> ${validatedData.company || 'N/A'}</p>
-    //     <p><strong>Service Interest:</strong> ${validatedData.service}</p>
-    //     <p><strong>Message:</strong></p>
-    //     <p>${validatedData.message}</p>
-    //   `,
-    // });
 
     return NextResponse.json(
       { message: 'Contact form submitted successfully' },
