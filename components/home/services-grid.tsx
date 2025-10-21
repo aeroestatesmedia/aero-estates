@@ -34,7 +34,7 @@ export function ServicesGrid() {
             Our Services
           </h2>
           <p className="text-base text-muted-foreground font-light max-w-2xl">
-            Comprehensive solutions designed to drive growth and innovation across digital, financial, real estate, and technology landscapes.
+            End-to-end solutions for digital transformation, financial strategy, property marketing, and technology development.
           </p>
         </motion.div>
 

@@ -37,15 +37,15 @@ export function AboutSection() {
 
             <div className="space-y-6 text-muted-foreground font-light leading-relaxed text-base">
               <p>
-                At Aero Estates, we specialise in brand scaling, equity analysis, real estate and tech solutions. We build strong partnerships to deliver clear, innovative strategies tailored to each client's goals.
+                Aero Estates specializes in four core areas: brand scaling, equity analysis, real estate solutions, and technology development. We work closely with clients to deliver practical, effective strategies tailored to their specific goals.
               </p>
 
               <p>
-                Our team combines creativity, technology and insight to help brands grow and succeed in a changing market. We believe in personalised service, open collaboration and lasting value.
+                Our team brings together expertise in marketing, finance, technology, and creative production. We focus on understanding your business before recommending solutions, ensuring what we deliver actually works for your situation.
               </p>
 
               <p>
-                Whether working with startups or global brands, we are committed to excellence and innovation in every project. Your vision is our mission — together, we create digital estates that inspire, engage and endure.
+                From startups to established companies, we approach every project with the same commitment to quality and results. Your success drives everything we do—we're here to build something that lasts.
               </p>
             </div>
           </div>

@@ -15,7 +15,7 @@ const offerings = [
   {
     icon: Code,
     title: 'Custom Web Application Development',
-    description: 'Build powerful, responsive web applications tailored to your specific business requirements. Our full-stack development team creates scalable applications using modern frameworks like React, Vue.js, and Angular for frontend, with robust backend systems using Node.js, Python, or .NET. We deliver applications that are fast, secure, and optimised for user experience across all devices.',
+    description: 'Build powerful, responsive web applications tailored to your specific business requirements. Our full-stack development team creates scalable applications using modern frameworks like React, Vue.js, and Angular for frontend, with robust backend systems using Node.js, Python, or .NET. We deliver applications that are fast, secure, and optimized for user experience across all devices.',
   },
   {
     icon: Smartphone,
@@ -40,7 +40,7 @@ const offerings = [
   {
     icon: Database,
     title: 'Database Design & Management',
-    description: 'Architect and implement scalable database solutions optimised for your specific data requirements. We work with both SQL and NoSQL databases, designing schemas that ensure data integrity, optimal performance, and scalability. Our database services include migration from legacy systems, optimisation of existing databases, and implementation of data warehouses and analytics solutions.',
+    description: 'Architect and implement scalable database solutions optimized for your specific data requirements. We work with both SQL and NoSQL databases, designing schemas that ensure data integrity, optimal performance, and scalability. Our database services include migration from legacy systems, optimization of existing databases, and implementation of data warehouses and analytics solutions.',
   },
 ];
 
@@ -49,7 +49,7 @@ export default function TechnologyArchitecturePage() {
     <div>
       <ServiceHero
         title="Tech Solutions"
-        description="Empowering businesses with custom technology solutions"
+        description="Empower your business with custom technology solutions"
         Icon={Network}
       />
 
@@ -64,13 +64,13 @@ export default function TechnologyArchitecturePage() {
             </div>
             <div className="lg:col-span-7 space-y-6 text-base text-muted-foreground font-light leading-relaxed">
               <p>
-                In today's digital-first world, having the right technology infrastructure can be the difference between thriving and merely surviving. Our tech solutions services provide comprehensive custom development that transforms business processes, enhances customer experiences, and drives operational efficiency through intelligent automation and cutting-edge applications.
+                In today's digital-first world, having the right technology infrastructure can be the difference between thriving and merely surviving. Our tech solutions services provide comprehensive custom development that transforms business processes, enhances customer experiences, and drives operational efficiency through intelligent automation and modern applications.
               </p>
               <p>
-                We specialise in building tailored technology solutions that address your specific business challenges and opportunities. From custom web applications that streamline internal processes to sophisticated AI systems that provide competitive advantages, we develop solutions that are not only technically excellent but also aligned with your strategic business objectives.
+                We specialize in building tailored technology solutions that address your specific business challenges and opportunities. From custom web applications that streamline internal processes to sophisticated AI systems that provide competitive advantages, we develop solutions that are technically excellent and aligned with your strategic business objectives.
               </p>
               <p>
-                Whether you're a startup needing to build your technical foundation from scratch, an established business looking to modernise legacy systems, or an enterprise seeking to leverage AI for competitive advantage, our team delivers scalable, secure, and maintainable solutions that grow with your business.
+                Whether you're a startup needing to build your technical foundation from scratch, an established business looking to modernize legacy systems, or an enterprise seeking to leverage AI for competitive advantage, our team delivers scalable, secure, and maintainable solutions that grow with your business.
               </p>
             </div>
           </div>

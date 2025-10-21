@@ -12,22 +12,22 @@ const values = [
   {
     icon: Award,
     title: 'Excellence',
-    description: 'We set the highest standards in everything we do, delivering exceptional results that exceed expectations.',
+    description: 'We maintain high standards across everything we deliver, consistently exceeding client expectations.',
   },
   {
     icon: Lightbulb,
     title: 'Innovation',
-    description: 'We embrace new ideas and technologies, constantly evolving to stay ahead of the curve.',
+    description: 'We stay current with new ideas and technologies, continuously evolving our approach to deliver better results.',
   },
   {
     icon: Users,
     title: 'Partnership',
-    description: 'We build lasting relationships based on trust, collaboration, and mutual success.',
+    description: 'We build relationships based on trust, open communication, and shared success.',
   },
   {
     icon: Heart,
     title: 'Integrity',
-    description: 'We operate with honesty and transparency, always acting in our clients\' best interests.',
+    description: 'We operate with complete transparency, always acting in our clients\' best interests.',
   },
 ];
 
@@ -42,7 +42,7 @@ export default function AboutPage() {
               About Aero Estates
             </h1>
             <p className="text-lg text-muted-foreground font-light leading-relaxed max-w-2xl">
-              Building digital estates that inspire, engage, and endure
+              Building digital estates that last
             </p>
           </div>
         </div>
@@ -71,10 +71,10 @@ export default function AboutPage() {
                 <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Our Story</h2>
                 <div className="space-y-4 text-base text-muted-foreground font-light leading-relaxed">
                   <p>
-                    Founded in January 2024 in Dublin, Ireland, Aero Estates was born from a vision to bridge the gap between digital innovation and business growth. We saw an opportunity to create a multidisciplinary agency that could serve the diverse needs of modern businesses under one roof.
+                    Founded in January 2024 in Dublin, Ireland, Aero Estates emerged from a straightforward observation: businesses need integrated solutions, not disconnected services. We created a multidisciplinary agency that could handle diverse business needs under one roof.
                   </p>
                   <p>
-                    At Aero Estates, we specialise in brand scaling, equity analysis, real estate, and tech solutions. We build strong partnerships to deliver clear, innovative strategies tailored to each client's goals.
+                    We specialize in brand scaling, equity analysis, real estate solutions, and technology development. Our approach is based on building genuine partnerships and delivering clear, practical strategies that align with our clients' objectives.
                   </p>
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Our Mission</h2>
                 <p className="text-base text-muted-foreground font-light leading-relaxed">
-                  Our team combines creativity, technology, and insight to help brands grow and succeed in a changing market. We believe in personalised service, open collaboration, and lasting value. Whether working with startups or global brands, we are committed to excellence and innovation in every project. Your vision is our mission — together, we create digital estates that inspire, engage, and endure.
+                  Our team combines marketing expertise, financial acumen, and technical capability to help businesses grow sustainably. We believe in honest communication, meaningful collaboration, and delivering real value. Whether you're a startup or an established brand, we bring the same level of commitment to excellence. Your vision becomes our focus—together, we build something that endures.
                 </p>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function AboutPage() {
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Our Values</h2>
             <p className="text-base text-muted-foreground font-light max-w-2xl">
-              The principles that guide everything we do
+              The principles behind our work
             </p>
           </div>
 
@@ -130,7 +130,7 @@ export default function AboutPage() {
             <div className="mb-16">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Our Approach</h2>
               <p className="text-base text-muted-foreground font-light leading-relaxed">
-                Regardless of the service, we follow a proven methodology that ensures exceptional results and client satisfaction.
+                We follow a proven methodology across all services that ensures strong results and client satisfaction.
               </p>
             </div>
 
@@ -142,7 +142,7 @@ export default function AboutPage() {
                 <div className="space-y-3">
                   <h3 className="text-2xl font-bold tracking-tight">Discovery & Strategy</h3>
                   <p className="text-base text-muted-foreground font-light leading-relaxed">
-                    We begin every engagement by deeply understanding your business, objectives, challenges, and target audience. Through comprehensive discovery sessions, research, and analysis, we develop tailored strategies that align with your goals and set the foundation for success.
+                    Every engagement starts with understanding your business, goals, challenges, and target audience. Through thorough discovery sessions and research, we develop strategies specifically tailored to your situation and objectives.
                   </p>
                 </div>
               </div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
                 <div className="space-y-3">
                   <h3 className="text-2xl font-bold tracking-tight">Planning & Design</h3>
                   <p className="text-base text-muted-foreground font-light leading-relaxed">
-                    With a clear understanding of your needs, we create detailed plans, designs, and roadmaps. This includes technical specifications, creative concepts, financial models, or marketing strategies—whatever is needed to bring your vision to life with clarity and precision.
+                    With clear understanding of your needs, we create detailed plans and roadmaps. This includes technical specifications, creative concepts, financial models, or marketing strategies—whatever's needed to execute effectively and efficiently.
                   </p>
                 </div>
               </div>
@@ -166,7 +166,7 @@ export default function AboutPage() {
                 <div className="space-y-3">
                   <h3 className="text-2xl font-bold tracking-tight">Implementation & Execution</h3>
                   <p className="text-base text-muted-foreground font-light leading-relaxed">
-                    Our expert teams execute the strategy with precision and creativity. Whether developing technology, creating marketing campaigns, producing visual content, or conducting financial analysis, we maintain the highest standards of quality while keeping you informed and involved throughout the process.
+                    Our teams execute with precision and creativity. Whether developing technology, creating marketing campaigns, producing visual content, or conducting financial analysis, we maintain consistent quality while keeping you informed throughout.
                   </p>
                 </div>
               </div>
@@ -176,9 +176,9 @@ export default function AboutPage() {
                   4
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-2xl font-bold tracking-tight">Optimisation & Growth</h3>
+                  <h3 className="text-2xl font-bold tracking-tight">Optimization & Growth</h3>
                   <p className="text-base text-muted-foreground font-light leading-relaxed">
-                    We don't just deliver and walk away. We continuously monitor performance, gather feedback, analyse results, and refine our approach to maximise ROI and drive sustained growth. Our commitment extends beyond project completion to ensure long-term success.
+                    We don't just deliver and disappear. We monitor performance, gather feedback, analyze results, and refine our approach to maximize ROI and drive sustained growth. Our commitment extends well beyond project completion.
                   </p>
                 </div>
               </div>
@@ -206,7 +206,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-semibold tracking-tight">Hybrid Working Model</h3>
                 <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                  We embrace modern work practices with a hybrid approach, combining the flexibility of remote work with in-person collaboration when needed. This allows us to attract top talent and maintain work-life balance while fostering strong team connections.
+                  We use a hybrid approach that combines remote flexibility with in-person collaboration when valuable. This lets us work with top talent while maintaining strong team connections and work-life balance.
                 </p>
               </div>
             </div>
@@ -219,7 +219,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-semibold tracking-tight">Collaborative Partnership</h3>
                 <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                  We work closely with our clients as true partners, maintaining open communication and transparency throughout every project to ensure alignment and success.
+                  We work as true partners with our clients, maintaining clear communication and transparency throughout every project to ensure alignment and success.
                 </p>
               </div>
             </div>
@@ -232,7 +232,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-semibold tracking-tight">Innovation-Driven</h3>
                 <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                  We stay ahead of industry trends and embrace cutting-edge technologies and methodologies to deliver solutions that give our clients a competitive advantage.
+                  We stay ahead of industry trends and adopt proven technologies and methodologies that give our clients competitive advantages.
                 </p>
               </div>
             </div>
@@ -245,7 +245,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-semibold tracking-tight">Student Internships</h3>
                 <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                  We invest in the next generation through our internship programme, providing students with real-world experience and professional development opportunities.
+                  We invest in emerging talent through our internship program, providing students with practical experience and professional development opportunities.
                 </p>
               </div>
             </div>
@@ -264,7 +264,7 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Based in Dublin</h2>
             </div>
             <p className="text-base text-muted-foreground font-light leading-relaxed">
-              Proudly serving clients from our base in {COMPANY_INFO.location}. Our hybrid approach means we can work with clients across Ireland and beyond, with flexible working arrangements providing opportunities for both in-person meetings and remote collaboration when needed.
+              We serve clients from our Dublin, Ireland base. Our hybrid model means we work with clients across Ireland and internationally, with flexible arrangements for both in-person meetings and remote collaboration as needed.
             </p>
           </div>
         </div>

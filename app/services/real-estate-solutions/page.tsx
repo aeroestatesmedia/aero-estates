@@ -49,7 +49,7 @@ const offerings = [
   {
     icon: Video,
     title: 'Professional Drone Videography',
-    description: 'Capture stunning aerial footage that showcases your property\'s location, surroundings, and unique features from breathtaking perspectives. Our certified drone operators use professional-grade equipment to create cinematic videos that highlight proximity to amenities, transport links, schools, and natural features while demonstrating the property\'s position within its neighbourhood context.',
+    description: 'Capture stunning aerial footage that showcases your property\'s location, surroundings, and unique features from breathtaking perspectives. Our certified drone operators use professional-grade equipment to create cinematic videos that highlight proximity to amenities, transport links, schools, and natural features while demonstrating the property\'s position within its neighborhood context.',
   },
   {
     icon: ImageIcon,
@@ -74,7 +74,7 @@ const offerings = [
   {
     icon: Palette,
     title: 'Property Staging Consultation',
-    description: 'Professional advice on presenting your property to maximise appeal and value. Our staging consultation identifies opportunities to enhance the property\'s presentation, from furniture arrangement and décor suggestions to minor improvements that can significantly impact buyer perception and offers.',
+    description: 'Professional advice on presenting your property to maximize appeal and value. Our staging consultation identifies opportunities to enhance the property\'s presentation, from furniture arrangement and décor suggestions to minor improvements that can significantly impact buyer perception and offers.',
   },
 ];
 
@@ -83,7 +83,7 @@ export default function RealEstateSolutionsPage() {
     <div>
       <ServiceHero
         title="Real Estate Solutions"
-        description="Elevating your property's presence to attract buyers"
+        description="Showcase your property to attract serious buyers"
         Icon={Building2}
       />
 
@@ -98,13 +98,13 @@ export default function RealEstateSolutionsPage() {
             </div>
             <div className="lg:col-span-7 space-y-6 text-base text-muted-foreground font-light leading-relaxed">
               <p>
-                In today's competitive property market, stunning visual presentation can make the difference between a property that sells quickly at full asking price and one that lingers on the market. Our real estate solutions combine cutting-edge technology with creative expertise to showcase properties in their absolute best light.
+                In today's competitive property market, stunning visual presentation can make the difference between a property that sells quickly at full asking price and one that lingers on the market. Our real estate solutions combine advanced technology with creative expertise to showcase properties in their best light.
               </p>
               <p>
-                We understand that first impressions are everything in real estate. That's why we offer comprehensive visual marketing services that capture the unique character and appeal of each property. From breathtaking aerial footage that showcases location and surroundings to immersive virtual tours that let buyers explore every detail, we create marketing materials that drive genuine buyer interest and engagement.
+                We understand that first impressions matter in real estate. That's why we offer comprehensive visual marketing services that capture the unique character and appeal of each property. From breathtaking aerial footage that showcases location and surroundings to immersive virtual tours that let buyers explore every detail, we create marketing materials that drive genuine buyer interest and engagement.
               </p>
               <p>
-                Whether you're a real estate agent looking to differentiate your listings, a property developer marketing new builds, or a homeowner preparing to sell, our professional services ensure your property stands out in a crowded marketplace and attracts serious, qualified buyers.
+                Whether you're a real estate agent looking to differentiate your listings, a property developer marketing new builds, or a homeowner preparing to sell, our professional services ensure your property stands out and attracts serious, qualified buyers.
               </p>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function RealEstateSolutionsPage() {
               Why Choose Our Real Estate Solutions
             </h2>
             <p className="text-base text-muted-foreground font-light leading-relaxed">
-              We deliver property consulting services backed by market intelligence, financial expertise, and a track record of successful outcomes.
+              We deliver property marketing services backed by professional production standards and market expertise.
             </p>
           </div>
 
@@ -133,7 +133,7 @@ export default function RealEstateSolutionsPage() {
                 <InteractiveIcon Icon={Camera} size="sm" />
                 <h3 className="text-xl font-semibold tracking-tight">Professional Quality Production</h3>
                 <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                  Every video, photo, and tour is produced to the highest professional standards using industry-leading equipment and techniques. Our experienced team knows how to capture properties at their most appealing, using optimal lighting, angles, and composition.
+                  Every video, photo, and tour is produced to high professional standards using industry-leading equipment and techniques. Our experienced team knows how to capture properties at their most appealing, using optimal lighting, angles, and composition.
                 </p>
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function RealEstateSolutionsPage() {
                 <InteractiveIcon Icon={Video} size="sm" />
                 <h3 className="text-xl font-semibold tracking-tight">Fast Turnaround Times</h3>
                 <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                  We understand the importance of getting properties to market quickly. Our streamlined production process ensures rapid delivery without compromising quality, helping you capitalise on market momentum and buyer interest.
+                  We understand the importance of getting properties to market quickly. Our streamlined production process ensures rapid delivery without compromising quality, helping you capitalize on market momentum and buyer interest.
                 </p>
               </div>
             </div>

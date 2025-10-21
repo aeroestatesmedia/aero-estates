@@ -42,7 +42,7 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                Building Digital Estates That Endure
+                Building Digital Estates That Last
               </motion.h1>
 
               <motion.p
@@ -51,7 +51,7 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                Strategic partners in brand scaling, equity analysis, real estate solutions, and tech solutions.
+                We partner with businesses on brand growth, financial analysis, property marketing, and technology development.
               </motion.p>
             </div>
 

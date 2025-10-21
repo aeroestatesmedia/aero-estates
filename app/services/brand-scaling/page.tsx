@@ -15,13 +15,13 @@ export const metadata: Metadata = {
 const offerings = [
   {
     icon: Target,
-    title: 'Search Engine Optimisation (SEO)',
-    description: 'Drive organic traffic with strategic SEO that improves your search rankings and visibility. We conduct comprehensive keyword research, technical SEO audits, on-page optimisation, and link building strategies to ensure your website ranks for terms that matter to your business.',
+    title: 'Search Engine Optimization (SEO)',
+    description: 'Drive organic traffic with strategic SEO that improves your search rankings and visibility. We conduct comprehensive keyword research, technical SEO audits, on-page optimization, and link building strategies to ensure your website ranks for terms that matter to your business.',
   },
   {
     icon: Palette,
     title: 'Content Marketing & Strategy',
-    description: 'Engage your audience with compelling content that tells your brand story. From blog posts and white papers to video content and infographics, we create content that educates, entertains, and converts while building your authority in your industry.',
+    description: 'Engage your audience with compelling content that tells your brand story. From blog posts and whitepapers to video content and infographics, we create content that educates, entertains, and converts while building your authority in your industry.',
   },
   {
     icon: Users,
@@ -31,17 +31,17 @@ const offerings = [
   {
     icon: Code,
     title: 'Web Design & Development',
-    description: 'Create high-converting websites that reflect your brand and deliver exceptional user experiences. Our team designs and develops responsive, fast-loading websites optimised for both desktop and mobile, with seamless integration of analytics, CRM systems, and marketing automation tools.',
+    description: 'Create high-converting websites that reflect your brand and deliver exceptional user experiences. Our team designs and develops responsive, fast-loading websites optimized for both desktop and mobile, with seamless integration of analytics, CRM systems, and marketing automation tools.',
   },
   {
     icon: BarChart,
     title: 'Pay-Per-Click (PPC) Advertising',
-    description: 'Maximise ROI with targeted PPC campaigns across Google Ads, Microsoft Advertising, and social platforms. We handle campaign setup, keyword research, ad copywriting, landing page optimisation, bid management, and continuous A/B testing to ensure your advertising budget delivers measurable results.',
+    description: 'Maximize ROI with targeted PPC campaigns across Google Ads, Microsoft Advertising, and social platforms. We handle campaign setup, keyword research, ad copywriting, landing page optimization, bid management, and continuous A/B testing to ensure your advertising budget delivers measurable results.',
   },
   {
     icon: TrendingUp,
     title: 'Email Marketing & Automation',
-    description: 'Nurture leads and retain customers with strategic email marketing campaigns. We design automated workflows, segment audiences for personalised messaging, craft compelling email content, and optimise campaigns based on open rates, click-through rates, and conversions.',
+    description: 'Nurture leads and retain customers with strategic email marketing campaigns. We design automated workflows, segment audiences for personalized messaging, craft compelling email content, and optimize campaigns based on open rates, click-through rates, and conversions.',
   },
 ];
 
@@ -50,7 +50,7 @@ export default function DigitalMarketingPage() {
     <div>
       <ServiceHero
         title="Brand Scaling"
-        description="Boost your reach with targeted digital campaigns that deliver measurable results"
+        description="Expand your reach with targeted digital campaigns that deliver measurable results"
         Icon={TrendingUp}
       />
 
@@ -67,10 +67,10 @@ export default function DigitalMarketingPage() {
                 </div>
                 <div className="space-y-8 text-xl text-muted-foreground font-light leading-relaxed">
                   <p>
-                    In today's competitive digital landscape, a strong online presence is essential for business growth. Our brand scaling services combine creativity, data analytics, and cutting-edge technology to create campaigns that not only capture attention but deliver measurable results.
+                    In today's competitive digital landscape, a strong online presence is essential for business growth. Our brand scaling services combine creative thinking, data analysis, and proven technology to create campaigns that capture attention and deliver real results.
                   </p>
                   <p>
-                    We take a holistic approach to brand scaling, understanding that every channel works together to create a cohesive brand experience. From SEO and content marketing to paid advertising and social media management, we develop integrated strategies that align with your business objectives and resonate with your target audience.
+                    We take a comprehensive approach to brand scaling, recognizing that every channel contributes to a cohesive brand experience. From SEO and content marketing to paid advertising and social media management, we develop integrated strategies that align with your business objectives and resonate with your target audience.
                   </p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function DigitalMarketingPage() {
                 Why Choose Our Brand Scaling Services
               </h2>
               <p className="text-xl text-muted-foreground font-light leading-relaxed max-w-3xl">
-                We deliver more than just marketing campaigns—we create sustainable growth strategies that evolve with your business.
+                We deliver sustainable growth strategies that evolve with your business.
               </p>
             </div>
 
@@ -113,7 +113,7 @@ export default function DigitalMarketingPage() {
                   </div>
                   <h3 className="text-2xl font-bold tracking-tight">Data-Driven Approach</h3>
                   <p className="text-lg text-muted-foreground font-light leading-relaxed">
-                    Every decision we make is backed by data and analytics. We continuously monitor performance metrics, conduct A/B testing, and refine strategies to ensure optimal ROI and sustainable growth.
+                    Every decision is backed by data and analytics. We continuously monitor performance metrics, conduct A/B testing, and refine strategies to ensure optimal ROI and sustainable growth.
                   </p>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default function DigitalMarketingPage() {
                   </div>
                   <h3 className="text-2xl font-bold tracking-tight">Audience-First Methodology</h3>
                   <p className="text-lg text-muted-foreground font-light leading-relaxed">
-                    We invest time understanding your target audience—their behaviours, preferences, and pain points—to create campaigns that truly resonate and drive meaningful engagement.
+                    We invest time understanding your target audience—their behaviors, preferences, and pain points—to create campaigns that genuinely resonate and drive meaningful engagement.
                   </p>
                 </div>
               </div>
@@ -139,7 +139,7 @@ export default function DigitalMarketingPage() {
                   </div>
                   <h3 className="text-2xl font-bold tracking-tight">Transparent Reporting</h3>
                   <p className="text-lg text-muted-foreground font-light leading-relaxed">
-                    Receive clear, comprehensive reports that demonstrate the impact of your marketing investment. We believe in complete transparency with regular updates on campaign performance and strategic recommendations.
+                    You receive clear, comprehensive reports demonstrating the impact of your marketing investment. We believe in complete transparency with regular updates on campaign performance and strategic recommendations.
                   </p>
                 </div>
               </div>

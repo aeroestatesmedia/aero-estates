@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const offerings = [
   {
     icon: Calculator,
-    title: 'Financial Modelling & Forecasting',
+    title: 'Financial Modeling & Forecasting',
     description: 'Develop comprehensive financial models that project future performance, cash flows, and business scenarios. Our models incorporate historical data, market trends, and strategic assumptions to provide reliable forecasts for budgeting, fundraising, and strategic planning initiatives.',
   },
   {
@@ -35,12 +35,12 @@ const offerings = [
   {
     icon: Target,
     title: 'Strategic Financial Planning',
-    description: 'Support long-term strategic planning with financial analysis and scenario modelling. We help businesses evaluate growth initiatives, capital allocation decisions, and strategic alternatives, providing the financial insights needed to make confident, data-driven choices.',
+    description: 'Support long-term strategic planning with financial analysis and scenario modeling. We help businesses evaluate growth initiatives, capital allocation decisions, and strategic alternatives, providing the financial insights needed to make confident, data-driven choices.',
   },
   {
     icon: CircleDollarSign,
     title: 'Capital Structure Advisory',
-    description: 'Optimise your capital structure by analysing debt and equity options, evaluating funding alternatives, and assessing the impact of different financing strategies on returns and risk profile. We help businesses make informed decisions about raising capital and managing their balance sheet.',
+    description: 'Optimize your capital structure by analyzing debt and equity options, evaluating funding alternatives, and assessing the impact of different financing strategies on returns and risk profile. We help businesses make informed decisions about raising capital and managing their balance sheet.',
   },
 ];
 
@@ -66,7 +66,7 @@ export default function EquityAnalysisPage() {
                 </div>
                 <div className="space-y-8 text-xl text-muted-foreground font-light leading-relaxed">
                   <p>
-                    In today's complex financial landscape, informed decision-making requires rigorous analysis and deep market understanding. Our equity analysis services provide the insights and intelligence businesses need to evaluate opportunities, assess risks, and drive strategic growth.
+                    In today's complex financial landscape, smart decision-making requires rigorous analysis and deep market understanding. Our equity analysis services provide the insights and intelligence businesses need to evaluate opportunities, assess risks, and drive strategic growth.
                   </p>
                   <p>
                     We combine technical financial expertise with industry knowledge to deliver comprehensive analysis that goes beyond the numbers. Whether you're evaluating an acquisition target, planning a capital raise, or developing long-term strategy, we provide the financial intelligence that supports confident decision-making.
@@ -111,7 +111,7 @@ export default function EquityAnalysisPage() {
                   </div>
                   <h3 className="text-2xl font-bold tracking-tight">Rigorous Methodology</h3>
                   <p className="text-lg text-muted-foreground font-light leading-relaxed">
-                    Our analysis follows established financial standards and best practices, ensuring credibility and reliability. We use sophisticated modelling techniques while maintaining transparency in our assumptions and methodologies.
+                    Our analysis follows established financial standards and best practices, ensuring credibility and reliability. We use sophisticated modeling techniques while maintaining transparency in our assumptions and methodologies.
                   </p>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function EquityAnalysisPage() {
                   </div>
                   <h3 className="text-2xl font-bold tracking-tight">Industry Expertise</h3>
                   <p className="text-lg text-muted-foreground font-light leading-relaxed">
-                    Our team combines financial analysis skills with deep sector knowledge, enabling us to contextualise findings within industry dynamics and competitive realities that matter to your business.
+                    Our team combines financial analysis skills with deep sector knowledge, enabling us to contextualize findings within industry dynamics and competitive realities that matter to your business.
                   </p>
                 </div>
               </div>

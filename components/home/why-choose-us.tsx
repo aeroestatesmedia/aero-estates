@@ -8,22 +8,22 @@ const benefits = [
   {
     icon: Sparkles,
     title: 'Multidisciplinary Expertise',
-    description: 'Four core services under one roof: digital, financial, property and technical solutions',
+    description: 'Four specialized services under one roof: digital marketing, financial analysis, property marketing, and technology development',
   },
   {
     icon: Target,
-    title: 'Personalised Strategies',
-    description: 'Tailored approaches designed specifically for your goals and market position',
+    title: 'Tailored Strategies',
+    description: 'Custom approaches designed around your specific goals, market position, and business needs',
   },
   {
     icon: Zap,
-    title: 'Innovation Focused',
-    description: 'Cutting-edge solutions that keep you ahead in a rapidly evolving digital landscape',
+    title: 'Forward-Thinking Solutions',
+    description: 'Modern tools and strategies that keep you competitive in a rapidly evolving marketplace',
   },
   {
     icon: Handshake,
-    title: 'Long-term Partnership',
-    description: "We're committed to your sustained growth, not just one-off projects",
+    title: 'Long-Term Partnership',
+    description: "We're invested in your ongoing success, not just individual projects",
   },
 ];
 

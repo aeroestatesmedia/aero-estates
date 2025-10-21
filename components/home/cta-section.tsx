@@ -22,7 +22,7 @@ export function CTASection() {
                 Ready to Build Your Digital Estate?
               </h2>
               <p className="text-base text-muted-foreground font-light leading-relaxed max-w-2xl">
-                Let's discuss how we can help your brand grow and succeed in today's digital landscape.
+                Let's talk about how we can help your business grow.
               </p>
             </div>
 

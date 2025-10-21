@@ -38,10 +38,10 @@ export default function ServicesPage() {
             </div>
             <div className="lg:col-span-7 space-y-6 text-base text-muted-foreground font-light leading-relaxed">
               <p>
-                At Aero Estates, we deliver integrated solutions across brand scaling, equity analysis, real estate, and technology. Our approach combines strategic thinking with practical execution to help businesses grow, scale, and succeed in competitive markets.
+                Aero Estates delivers integrated solutions across brand scaling, equity analysis, real estate, and technology. We combine strategic thinking with practical execution to help businesses grow, scale, and compete effectively.
               </p>
               <p>
-                Each service is designed to address specific business challenges while working together as part of a comprehensive growth strategy. Whether you're looking to expand your digital presence, make informed investment decisions, showcase properties effectively, or leverage technology for competitive advantage, our expert team delivers results that matter.
+                Each service addresses specific business challenges while working together as part of a comprehensive growth strategy. Whether you're expanding your digital presence, making critical investment decisions, marketing properties, or leveraging technology for competitive advantage, our team delivers tangible results.
               </p>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function ServicesPage() {
               Our Services
             </h2>
             <p className="text-base text-muted-foreground font-light leading-relaxed max-w-3xl">
-              Explore our comprehensive range of services designed to help your business thrive.
+              Explore our range of services designed to help your business thrive.
             </p>
           </div>
 
@@ -122,7 +122,7 @@ export default function ServicesPage() {
                   Ready to Get Started?
                 </h2>
                 <p className="text-base text-muted-foreground font-light leading-relaxed max-w-2xl">
-                  Let's discuss which services are right for your business and how we can help you achieve your goals.
+                  Let's discuss which services fit your business and how we can help you achieve your goals.
                 </p>
               </div>
 
