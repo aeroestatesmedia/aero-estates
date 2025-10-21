@@ -5,6 +5,7 @@ import { ServiceHero } from '@/components/services/service-hero';
 import { Button } from '@/components/ui/button';
 import { PropertyCarousel } from '@/components/services/property-carousel';
 import { InteractiveIcon } from '@/components/ui/interactive-icon';
+import { ComingSoon } from '@/components/services/coming-soon';
 
 export const metadata: Metadata = {
   title: 'Real Estate Solutions',
@@ -210,6 +211,9 @@ export default function RealEstateSolutionsPage() {
         </div>
       </section>
 
+
+      {/* Coming Soon Section */}
+      <ComingSoon />
 
       {/* CTA Section */}
       <section className="py-20 lg:py-28 bg-background">

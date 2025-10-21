@@ -5,6 +5,7 @@ import { TrendingUp, Target, Users, BarChart, Palette, Code } from 'lucide-react
 import { ServiceHero } from '@/components/services/service-hero';
 import { Button } from '@/components/ui/button';
 import { InteractiveIcon } from '@/components/ui/interactive-icon';
+import { ComingSoon } from '@/components/services/coming-soon';
 
 export const metadata: Metadata = {
   title: 'Brand Scaling Services',
@@ -181,6 +182,9 @@ export default function DigitalMarketingPage() {
           </div>
         </div>
       </section>
+
+      {/* Coming Soon Section */}
+      <ComingSoon />
 
       {/* CTA Section */}
       <section className="py-32 lg:py-40 bg-background">

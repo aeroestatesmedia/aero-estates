@@ -4,6 +4,7 @@ import { Network, Code, Smartphone, Brain, Zap, Database } from 'lucide-react';
 import { ServiceHero } from '@/components/services/service-hero';
 import { Button } from '@/components/ui/button';
 import { InteractiveIcon } from '@/components/ui/interactive-icon';
+import { ComingSoon } from '@/components/services/coming-soon';
 
 export const metadata: Metadata = {
   title: 'Tech Solutions Services',
@@ -161,6 +162,9 @@ export default function TechnologyArchitecturePage() {
         </div>
       </section>
 
+
+      {/* Coming Soon Section */}
+      <ComingSoon />
 
       {/* CTA Section */}
       <section className="py-20 lg:py-28 bg-background">

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { LineChart, TrendingUp, FileText, Calculator, PieChart, Target, BarChart3, CircleDollarSign } from 'lucide-react';
 import { ServiceHero } from '@/components/services/service-hero';
 import { Button } from '@/components/ui/button';
+import { ComingSoon } from '@/components/services/coming-soon';
 
 export const metadata: Metadata = {
   title: 'Equity Analysis Services',
@@ -179,6 +180,9 @@ export default function EquityAnalysisPage() {
           </div>
         </div>
       </section>
+
+      {/* Coming Soon Section */}
+      <ComingSoon />
 
       {/* CTA Section */}
       <section className="py-32 lg:py-40 bg-background">
