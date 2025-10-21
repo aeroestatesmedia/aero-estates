@@ -45,9 +45,9 @@ export function Navbar() {
       <header
         className={cn(
           'fixed top-0 w-full z-50 transition-all duration-300',
-          isScrolled
-            ? 'bg-background/95 backdrop-blur-md border-b border-foreground/10'
-            : 'bg-transparent'
+          !isScrolled && pathname === '/'
+            ? 'bg-transparent backdrop-blur-none border-b border-transparent shadow-none'
+            : 'bg-background/60 backdrop-blur-xl border-b border-foreground/10 shadow-lg shadow-foreground/5'
         )}
       >
         <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,13 +94,24 @@ export function Navbar() {
                   >
                     Services
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent>
+                  <NavigationMenuContent
+                    className={cn(
+                      !isScrolled && pathname === '/'
+                        ? 'bg-background/30 backdrop-blur-xl'
+                        : 'bg-background/95 backdrop-blur-md'
+                    )}
+                  >
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
                       {SERVICES.map((service) => (
                         <li key={service.id}>
                           <Link
                             href={`/services/${service.slug}`}
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className={cn(
+                              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
+                              !isScrolled && pathname === '/'
+                                ? 'hover:bg-foreground/10 focus:bg-foreground/10'
+                                : 'hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'
+                            )}
                           >
                             <div className="text-sm font-medium leading-none">
                               {service.name}

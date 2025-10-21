@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/theme-provider";
+import { CookieConsent } from "@/components/cookie-consent";
 import { organizationSchema } from "./metadata";
 
 const inter = Inter({
@@ -71,6 +72,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
           <Toaster />
+          <CookieConsent />
         </ThemeProvider>
       </body>
     </html>
