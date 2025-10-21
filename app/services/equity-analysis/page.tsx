@@ -75,10 +75,10 @@ export default function EquityAnalysisPage() {
               </div>
               <div className="relative h-[500px] lg:h-[600px]">
                 <Image
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop"
+                  src="/images/andrea-de-santis-rfg72xw2qwc-unsplash.jpg"
                   alt="Financial data analysis and charts"
                   fill
-                  className="object-cover rounded-sm"
+                  className="object-cover object-top rounded-sm"
                 />
               </div>
             </div>

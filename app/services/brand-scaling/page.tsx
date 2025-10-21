@@ -76,7 +76,7 @@ export default function DigitalMarketingPage() {
               </div>
               <div className="relative h-[500px] lg:h-[600px]">
                 <Image
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
+                  src="/images/anthony-lim-yRXgGX7g4tM-unsplash.jpg"
                   alt="Digital marketing analytics and strategy"
                   fill
                   className="object-cover rounded-sm"

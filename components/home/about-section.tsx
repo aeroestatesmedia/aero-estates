@@ -20,7 +20,7 @@ export function AboutSection() {
           <div className="lg:col-span-5">
             <div className="aspect-[4/3] rounded-sm overflow-hidden sticky top-24">
               <Image
-                src="/images/bernd-dittrich-pYlBAu3de0w-unsplash.jpg"
+                src="/images/bernd-dittrich-3dil0Olji38-unsplash.jpg"
                 alt="About Aero Estates"
                 width={800}
                 height={600}
