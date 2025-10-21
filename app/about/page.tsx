@@ -40,9 +40,6 @@ export default function AboutPage() {
       <section className="py-20 lg:py-28 bg-background">
         <div className="container mx-auto px-6 sm:px-8 lg:px-12">
           <div className="max-w-4xl space-y-6">
-            <Badge variant="outline" className="border-foreground/10 text-xs font-normal">
-              Est. {COMPANY_INFO.founded}
-            </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
               About Aero Estates
             </h1>
@@ -271,11 +268,6 @@ export default function AboutPage() {
             <p className="text-base text-muted-foreground font-light leading-relaxed">
               Proudly serving clients from our base in {COMPANY_INFO.location}. Our hybrid approach means we can work with clients across Ireland and beyond, with flexible working arrangements providing opportunities for both in-person meetings and remote collaboration when needed.
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Badge variant="outline" className="border-foreground/10 text-xs font-normal">Hybrid Operations</Badge>
-              <Badge variant="outline" className="border-foreground/10 text-xs font-normal">Flexible Working Available</Badge>
-              <Badge variant="outline" className="border-foreground/10 text-xs font-normal">Serving Ireland & Beyond</Badge>
-            </div>
           </div>
         </div>
       </section>

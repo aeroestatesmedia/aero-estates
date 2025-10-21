@@ -32,9 +32,6 @@ export function AboutSection() {
           {/* Right column - Content */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
-              <Badge variant="outline" className="border-foreground/10 text-xs font-normal">
-                Est. {COMPANY_INFO.founded}
-              </Badge>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
                 About Aero Estates
               </h2>

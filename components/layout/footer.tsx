@@ -143,20 +143,17 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-xs text-center md:text-left">
-              <Link href="#" className="hover:text-foreground transition-colors">
+              <Link href="/privacy" className="hover:text-foreground transition-colors">
                 Privacy Policy
               </Link>
               {' · '}
-              <Link href="#" className="hover:text-foreground transition-colors">
+              <Link href="/terms" className="hover:text-foreground transition-colors">
                 Terms of Service
               </Link>
               {' · '}
-              <Link href="#" className="hover:text-foreground transition-colors">
+              <Link href="/sitemap-page" className="hover:text-foreground transition-colors">
                 Sitemap
               </Link>
-            </div>
-            <div className="text-xs">
-              Built with Next.js & TypeScript
             </div>
           </div>
         </div>
